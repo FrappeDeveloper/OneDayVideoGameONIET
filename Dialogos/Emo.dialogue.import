@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://btabhrxxit7lg"
+path="res://.godot/imported/Emo.dialogue-0670b84da1e1556fc23b13aa4f48ba94.tres"
+
+[deps]
+
+source_file="res://Dialogos/Emo.dialogue"
+dest_files=["res://.godot/imported/Emo.dialogue-0670b84da1e1556fc23b13aa4f48ba94.tres"]
+
+[params]
+
+defaults=true

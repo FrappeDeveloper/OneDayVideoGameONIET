@@ -2,7 +2,19 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cv0s0enmys8ut"
+=======
+<<<<<<< HEAD
+uid="uid://ocee76kvjyoi"
+=======
+<<<<<<< HEAD
+uid="uid://dk7w1qsrjqpoo"
+=======
+uid="uid://ocee76kvjyoi"
+>>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
+>>>>>>> 8637e12a2c8752e5f8464e718207b73f34448092
+>>>>>>> b766162d7f752e1782c714ddf99558a565aecbe9
 path="res://.godot/imported/balanza completa.png-6588f11922359fa88c427b036e7aa9ee.ctex"
 metadata={
 "vram_texture": false

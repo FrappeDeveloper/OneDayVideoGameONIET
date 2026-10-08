@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cstoqn8tfo3oj"
+path="res://.godot/imported/Loco de la esquina.dialogue-d72a12ac777c62b953ede904e392b910.tres"
+
+[deps]
+
+source_file="res://Dialogos/Loco de la esquina.dialogue"
+dest_files=["res://.godot/imported/Loco de la esquina.dialogue-d72a12ac777c62b953ede904e392b910.tres"]
+
+[params]
+
+defaults=true
