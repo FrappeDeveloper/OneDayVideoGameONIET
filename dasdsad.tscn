@@ -51,4 +51,4 @@ position = Vector2(122, 80)
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=416271237]
 
 [node name="Bat" parent="." unique_id=527997413 instance=ExtResource("6_xprok")]
-position = Vector2(149, 90)
+position = Vector2(344, 88)

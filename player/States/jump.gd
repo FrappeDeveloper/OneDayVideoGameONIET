@@ -4,6 +4,7 @@ var dir
 
 # Called when the node enters the scene tree for the first time.
 func start() -> void:
+	control_node.sprite.play("jump")
 	control_node.velocity.y=control_node.jump_force
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.

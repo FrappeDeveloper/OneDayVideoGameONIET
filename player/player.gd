@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var attack_box: Area2D = $sprite/attack_box
-@onready var sprite: ColorRect = $sprite
+@onready var sprite = $sprite
 
 
 const speed = 300.0
@@ -36,8 +36,10 @@ func _physics_process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("Click") and GameManager.current_weapond!=null and not is_waitting and not GameManager.is_dialogue_active:
 		if GameManager.current_weapond.kind=="Mele":
+			sprite.play("mele")
 			GameManager.current_weapond.punch()
 		else:
+			sprite.play("gun")
 			var new_bullet= bullet.duplicate()
 			new_bullet.rotation=new_bullet.get_angle_to(get_local_mouse_position())
 			new_bullet.velocity=Vector2.RIGHT.rotated(new_bullet.rotation)*new_bullet.speed
@@ -47,6 +49,10 @@ func _input(event: InputEvent) -> void:
 			get_parent().add_child(new_bullet)
 			
 			GameManager.current_weapond.shooted()
-			
-func _on_attack_box_area_entered(area: Area2D) -> void:
-	pass # Replace with function body.
+	
+	if Input.is_action_just_pressed("Drop") and GameManager.current_weapond!=null and not is_waitting and not GameManager.is_dialogue_active:
+		var drop=GameManager.current_weapond.duplicate()
+		drop.position=position
+		get_parent().add_child(drop)
+		GameManager.current_weapond.queue_free()
+		GameManager.current_weapond=null

@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://cgpvghp66rkpt"
-=======
-uid="uid://bcjrugt4wpy6p"
->>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
+uid="uid://d0082a7fjsv2c"
 path="res://.godot/imported/Canary4.wav-53796c6f2e2ea1a678f83d887d0e5c2c.sample"
 
 [deps]
