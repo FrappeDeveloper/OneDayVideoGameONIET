@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dsen8spujrx3b"]
+
+[ext_resource type="Script" uid="uid://dbtgkwxhpaapd" path="res://NPC/BaseNPC/Fisura/fisura.gd" id="1_06r8o"]
+[ext_resource type="Texture2D" uid="uid://c5tdhn33e6f5m" path="res://Assets/npcl.png" id="2_h8drj"]
+[ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="2_jff0a"]
+[ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="3_h8drj"]
+[ext_resource type="Script" uid="uid://c30mlg47ul06f" path="res://NPC/BaseNPC/states/idle.gd" id="4_7274k"]
+[ext_resource type="Script" uid="uid://bo5bgs8dhhgb1" path="res://NPC/BaseNPC/states/talk.gd" id="5_vaf6q"]
+[ext_resource type="Script" uid="uid://b6oe5onfmeipt" path="res://NPC/BaseNPC/states/knockback.gd" id="6_7rpwx"]
+[ext_resource type="Script" uid="uid://fp321fhryknq" path="res://NPC/BaseNPC/states/scape.gd" id="7_odgdv"]
+[ext_resource type="Script" uid="uid://bfgp1ce3vu8l7" path="res://NPC/BaseNPC/dead.gd" id="8_yblfx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7274k"]
+atlas = ExtResource("2_h8drj")
+region = Rect2(0, 192, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vaf6q"]
+atlas = ExtResource("2_h8drj")
+region = Rect2(64, 192, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7rpwx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7274k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vaf6q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ev3w5"]
+radius = 30.0
+height = 112.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8y3j"]
+size = Vector2(124, 123)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ev3w5"]
+size = Vector2(389, 127)
+
+[node name="BaseNPC" type="CharacterBody2D" unique_id=635213196]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_06r8o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1717419503]
+position = Vector2(0, -13)
+scale = Vector2(2.0078127, 1.7708333)
+sprite_frames = SubResource("SpriteFrames_7rpwx")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=707675974]
+shape = SubResource("CapsuleShape2D_ev3w5")
+
+[node name="Timer" type="Timer" parent="." unique_id=1014662616]
+wait_time = 0.001
+
+[node name="hitbox" type="Area2D" parent="." unique_id=551030659]
+collision_layer = 32
+collision_mask = 80
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=369180439]
+position = Vector2(2, -2.5)
+shape = SubResource("RectangleShape2D_a8y3j")
+
+[node name="Area_dialogo" type="Area2D" parent="." unique_id=1474619394]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_dialogo" unique_id=1552063193]
+position = Vector2(-2.5, -0.5)
+shape = SubResource("RectangleShape2D_ev3w5")
+
+[node name="Exclamation" type="Sprite2D" parent="." unique_id=424008784]
+visible = false
+position = Vector2(-1, -101.99999)
+scale = Vector2(0.171875, 0.4296875)
+texture = ExtResource("2_jff0a")
+
+[node name="State_machine" type="Node" parent="." unique_id=205093645 node_paths=PackedStringArray("default_state")]
+script = ExtResource("3_h8drj")
+default_state = NodePath("Idle")
+metadata/_custom_type_script = "uid://brb28eoow43ng"
+
+[node name="Idle" type="Node" parent="State_machine" unique_id=322909523]
+script = ExtResource("4_7274k")
+
+[node name="Talk" type="Node" parent="State_machine" unique_id=537215656]
+script = ExtResource("5_vaf6q")
+
+[node name="Knockback" type="Node" parent="State_machine" unique_id=2003794223]
+script = ExtResource("6_7rpwx")
+
+[node name="Scape" type="Node" parent="State_machine" unique_id=36712939]
+script = ExtResource("7_odgdv")
+
+[node name="Dead" type="Node" parent="State_machine" unique_id=900297726]
+script = ExtResource("8_yblfx")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="area_entered" from="Area_dialogo" to="." method="_on_area_dialogo_area_entered"]
+[connection signal="area_exited" from="Area_dialogo" to="." method="_on_area_dialogo_area_exited"]
