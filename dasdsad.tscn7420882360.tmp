@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="1_yb0lw"]
 [ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="2_wx7xk"]
-[ext_resource type="PackedScene" uid="uid://by2dyfnyix528" path="res://objets/weaponds/Gun.tscn" id="3_wx7xk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdsbi"]
 size = Vector2(286, 20)
@@ -24,6 +23,3 @@ texture = ExtResource("2_wx7xk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1557953704]
 position = Vector2(142, 61)
 shape = SubResource("RectangleShape2D_fdsbi")
-
-[node name="Bat" parent="." unique_id=702910082 instance=ExtResource("3_wx7xk")]
-position = Vector2(86, 31)

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://by2dyfnyix528"]
+
+[ext_resource type="Script" uid="uid://vdjgnmypvx0g" path="res://objets/weaponds/weaponds.gd" id="1_35syj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_41x68"]
+radius = 72.0
+
+[node name="Gun" type="Area2D" unique_id=702910082]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("1_35syj")
+damage = 5
+delay = 1
+kind = "Gun"
+bullets = 5
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=477102671]
+offset_left = 4.9799194
+offset_top = -4.9799194
+offset_right = 8.100142
+offset_bottom = 7.6751156
+rotation = 0.7853982
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=487387913]
+offset_left = -1.1666927
+offset_top = 1.1666927
+offset_right = 6.6938453
+offset_bottom = 5.1291056
+rotation = 0.7853982
+color = Color(0, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=850723010]
+visible = false
+shape = SubResource("CircleShape2D_41x68")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

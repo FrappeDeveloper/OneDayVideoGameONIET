@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ce0bl12i4x055"]
+
+[ext_resource type="Script" uid="uid://bk242wpsabpnp" path="res://player/userInterface/user_interface.gd" id="1_3w8bo"]
+
+[node name="UserInterface" type="CanvasLayer" unique_id=38776697]
+script = ExtResource("1_3w8bo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1863670309]
+offset_left = 952.0
+offset_top = 469.0
+offset_right = 1133.0
+offset_bottom = 639.0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=374773951]
+offset_left = 957.0
+offset_top = 477.0
+offset_right = 1125.0
+offset_bottom = 629.0
