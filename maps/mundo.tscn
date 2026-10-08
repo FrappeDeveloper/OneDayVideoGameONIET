@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dsen8spujrx3b" path="res://NPC/BaseNPC/Fisura/Fisura.tscn" id="3_j0rc6"]
 [ext_resource type="PackedScene" uid="uid://ch60okqqddxu3" path="res://objets/weaponds/Bat.tscn" id="4_yty1c"]
 [ext_resource type="PackedScene" uid="uid://blxwrlj70qa6b" path="res://NPC/BaseNPC/bieja/vieja.tscn" id="5_dkdk5"]
+[ext_resource type="PackedScene" uid="uid://dk4ij0ho2b7ja" path="res://NPC/BaseNPC/nena/nena.tscn" id="6_m62g2"]
 
 [node name="Mundo" type="Node2D" unique_id=2070645401]
 
@@ -31,6 +32,12 @@ position = Vector2(177, 225)
 [node name="Marker2D4" type="Marker2D" parent="WayPoints" unique_id=1961573592]
 position = Vector2(759, 242)
 
+[node name="Marker2D5" type="Marker2D" parent="WayPoints" unique_id=1559270015]
+position = Vector2(1153, 231)
+
+[node name="Marker2D6" type="Marker2D" parent="WayPoints" unique_id=478918079]
+position = Vector2(1550, 238)
+
 [node name="Fisura" parent="." unique_id=635213196 node_paths=PackedStringArray("waypoints") instance=ExtResource("3_j0rc6")]
 position = Vector2(-758, 263)
 scale = Vector2(0.6, 0.64)
@@ -44,4 +51,10 @@ position = Vector2(-425, 283)
 position = Vector2(217, 227)
 live = 15.0
 waypoints = [NodePath("../WayPoints/Marker2D3"), NodePath("../WayPoints/Marker2D4")]
+speed = 100.0
+
+[node name="BaseNPC" parent="." unique_id=1944027967 node_paths=PackedStringArray("waypoints") instance=ExtResource("6_m62g2")]
+position = Vector2(1170, 238)
+live = 10.0
+waypoints = [NodePath("../WayPoints/Marker2D5"), NodePath("../WayPoints/Marker2D6")]
 speed = 100.0
