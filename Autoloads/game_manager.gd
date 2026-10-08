@@ -7,3 +7,5 @@ func decrease_gold(gold_amount):
 	gold -= gold_amount
 
 var has_meet_npc = false
+
+var current_weapond
