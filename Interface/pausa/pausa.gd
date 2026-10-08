@@ -10,7 +10,7 @@ func _physics_process(_delta):
 
 func _on_menu_pressed() -> void:
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://Menu/menu/nuevo menu.tscn")
+	get_tree().change_scene_to_file("res://Interface/menu/menu.tscn")
 
 func resume():
 	get_tree().paused = false

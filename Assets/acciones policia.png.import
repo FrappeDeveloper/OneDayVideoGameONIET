@@ -3,23 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 <<<<<<< HEAD
-uid="uid://bk61eeldcr43x"
+uid="uid://boxbufnqfeib4"
 =======
-<<<<<<< HEAD
-uid="uid://52eb7xyp4vba"
-=======
-uid="uid://bk61eeldcr43x"
+uid="uid://btfv4ofag8t4x"
 >>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
->>>>>>> 8637e12a2c8752e5f8464e718207b73f34448092
-path="res://.godot/imported/policia basic.png-7374171867d01c9dc53dfc07b923eae0.ctex"
+path="res://.godot/imported/acciones policia.png-d6df900f9e781845de41ad5fc73ef9fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/policia basic.png"
-dest_files=["res://.godot/imported/policia basic.png-7374171867d01c9dc53dfc07b923eae0.ctex"]
+source_file="res://Assets/acciones policia.png"
+dest_files=["res://.godot/imported/acciones policia.png-d6df900f9e781845de41ad5fc73ef9fd.ctex"]
 
 [params]
 

@@ -3,23 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 <<<<<<< HEAD
-uid="uid://bk61eeldcr43x"
+uid="uid://bi0hbyop6ose4"
 =======
-<<<<<<< HEAD
-uid="uid://52eb7xyp4vba"
-=======
-uid="uid://bk61eeldcr43x"
+uid="uid://cl0orqfpytouw"
 >>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
->>>>>>> 8637e12a2c8752e5f8464e718207b73f34448092
-path="res://.godot/imported/policia basic.png-7374171867d01c9dc53dfc07b923eae0.ctex"
+path="res://.godot/imported/corazon podrido.png-8c6098de9b46ae13de5794883040d5f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/policia basic.png"
-dest_files=["res://.godot/imported/policia basic.png-7374171867d01c9dc53dfc07b923eae0.ctex"]
+source_file="res://Assets/corazon podrido.png"
+dest_files=["res://.godot/imported/corazon podrido.png-8c6098de9b46ae13de5794883040d5f9.ctex"]
 
 [params]
 

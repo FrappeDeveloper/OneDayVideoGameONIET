@@ -72,7 +72,11 @@ Drop={
 
 [internationalization]
 
+<<<<<<< HEAD
 locale/translations_pot_files=PackedStringArray("res://Dialogos/DialogoPrueba.dialogue", "res://Dialogos/Comienzo_cualquiera.dialogue", "res://Dialogos/Niña(q perdio gato).dialogue", "res://Dialogos/Dame_pucho.dialogue", "res://Dialogos/Niño_medias.dialogue", "res://Señora.dialogue", "res://Dialogos/Emo.dialogue", "res://Dialogos/Policia.dialogue", "res://Dialogos/Loco de la esquina.dialogue")
+=======
+locale/translations_pot_files=PackedStringArray("res://Dialogos/DialogoPrueba.dialogue", "res://Dialogos/Comienzo_cualquiera.dialogue", "res://Dialogos/Niña(q perdio gato).dialogue", "res://Dialogos/Dame_pucho.dialogue", "res://Dialogos/Niño_medias.dialogue", "res://Dialogos/Me_das_plata.dialogue")
+>>>>>>> 8637e12a2c8752e5f8464e718207b73f34448092
 
 [layer_names]
 
