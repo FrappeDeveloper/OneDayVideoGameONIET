@@ -2,23 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://cnkhw8r2u63gd"
-=======
-<<<<<<< HEAD
 uid="uid://bifwosg1tlmxe"
-=======
-<<<<<<< HEAD
-uid="uid://cg51vd23eno3q"
-=======
-<<<<<<< HEAD
-uid="uid://dgc8bte4duy4t"
-=======
-uid="uid://cnkhw8r2u63gd"
->>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
->>>>>>> 8637e12a2c8752e5f8464e718207b73f34448092
->>>>>>> b766162d7f752e1782c714ddf99558a565aecbe9
->>>>>>> 1e764116da121305140cb808a52e62c0a6bf154f
 path="res://.godot/imported/Jump7 (3).wav-6cb7ad97b43204558cf45c176d66ffab.sample"
 
 [deps]
