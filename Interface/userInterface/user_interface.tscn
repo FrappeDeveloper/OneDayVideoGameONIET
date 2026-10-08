@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://ce0bl12i4x055"]
+
+[ext_resource type="Script" uid="uid://bk242wpsabpnp" path="res://Interface/userInterface/user_interface.gd" id="1_3w8bo"]
+
+[node name="UserInterface" type="CanvasLayer" unique_id=38776697]
+script = ExtResource("1_3w8bo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1863670309]
+offset_left = 1021.0
+offset_top = 528.0
+offset_right = 1202.0
+offset_bottom = 698.0
+scale = Vector2(0.48600447, 0.497487)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=374773951]
+offset_left = 1024.0
+offset_top = 533.0
+offset_right = 1192.0
+offset_bottom = 685.0
+scale = Vector2(0.48600447, 0.497487)
+color = Color(0, 0, 0, 1)
+
+[node name="Bullets Count" type="Label" parent="." unique_id=1018459907]
+offset_left = 1009.0
+offset_top = 612.0
+offset_right = 1049.0
+offset_bottom = 635.0

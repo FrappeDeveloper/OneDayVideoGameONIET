@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://boytnd857ja5p"]
+
+[ext_resource type="PackedScene" uid="uid://bdade0steh535" path="res://NPC/BaseNPC/base_npc.tscn" id="1_y0a4n"]
+[ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="2_as0jp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y0a4n"]
+size = Vector2(1161, 20)
+
+[node name="MapaPrueba" type="Node2D" unique_id=1771491570]
+
+[node name="WayPoints" type="Node2D" parent="." unique_id=643156233]
+
+[node name="Marker2D" type="Marker2D" parent="WayPoints" unique_id=1651459669]
+position = Vector2(351, 504)
+
+[node name="Marker2D2" type="Marker2D" parent="WayPoints" unique_id=1627449823]
+position = Vector2(762, 512)
+
+[node name="BaseNPC" parent="." unique_id=635213196 node_paths=PackedStringArray("waypoints") instance=ExtResource("1_y0a4n")]
+position = Vector2(263, 442)
+waypoints = [NodePath("../WayPoints/Marker2D"), NodePath("../WayPoints/Marker2D2")]
+speed = 100.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1646354441]
+position = Vector2(8, 563)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=780442024]
+position = Vector2(570.5, 0)
+shape = SubResource("RectangleShape2D_y0a4n")
+debug_color = Color(2.4065375e-07, 0.6499397, 0.13521013, 0.41960785)
+
+[node name="Player" parent="." unique_id=2036406556 instance=ExtResource("2_as0jp")]
+position = Vector2(375, 316)

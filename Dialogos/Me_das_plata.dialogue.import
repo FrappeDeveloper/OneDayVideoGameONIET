@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://beuwvrsjqjqb7"
+path="res://.godot/imported/Me_das_plata.dialogue-6fc4765a57d620ca87e9240d9803e782.tres"
+
+[deps]
+
+source_file="res://Dialogos/Me_das_plata.dialogue"
+dest_files=["res://.godot/imported/Me_das_plata.dialogue-6fc4765a57d620ca87e9240d9803e782.tres"]
+
+[params]
+
+defaults=true

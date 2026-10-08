@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bhqrajh4ryanm"]
+[gd_scene load_steps=7 format=3 uid="uid://bhqrajh4ryanm"]
 
 [ext_resource type="Script" uid="uid://cby0bq2fmhq61" path="res://Interface/pausa/pausa.gd" id="1_r4l3d"]
-[ext_resource type="FontFile" path="res://assets/fuentes/Alkhemikal.ttf" id="2_2gy7s"]
 [ext_resource type="Shader" uid="uid://d216cdu5lntpp" path="res://Interface/pausa/pausa.gdshader" id="2_x51mt"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qtnot"]
@@ -64,7 +63,6 @@ offset_left = 460.5
 offset_top = 259.0
 offset_right = 691.5
 offset_bottom = 307.0
-theme_override_fonts/font = ExtResource("2_2gy7s")
 theme_override_font_sizes/font_size = 40
 text = "Reanudar"
 
@@ -81,7 +79,6 @@ offset_right = 115.5
 offset_bottom = 64.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_2gy7s")
 theme_override_font_sizes/font_size = 40
 text = "Salir del juego"
 

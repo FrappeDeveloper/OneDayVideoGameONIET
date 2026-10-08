@@ -1,0 +1,7 @@
+~ start
+Persona: me das plata, tengo hambre
+- Si
+	do GameManager.decrease_gold(50)
+	Player: me quedan {{GameManager.gold}} pesos
+- No => END
+=> END
