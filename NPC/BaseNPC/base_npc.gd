@@ -18,28 +18,7 @@ func _ready() -> void:
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
 func _physics_process(delta: float) -> void:
-	if is_player_close and Input.is_action_just_pressed("Interactue") and not GameManager.is_dialogue_active:
-		print('Inicio de un dialogo')
-		DialogueManager.show_dialogue_balloon(my_dialogue)
-	
-	if is_waiting or GameManager.is_dialogue_active:
-		return
-	
-	var min_distance = 5.0
-	var target_position = waypoints[current_index].global_position
-	var direction = target_position - global_position
-	var distance = direction.length()
-	
-	direction = direction.normalized()
-	velocity = direction * speed
-	
-	if distance < min_distance:
-		current_index += 1
-		velocity = Vector2.ZERO
-		$Timer.start()
-		is_waiting = true
-		if current_index >= waypoints.size():
-			current_index = 0
+
 			
 	move_and_slide()
 

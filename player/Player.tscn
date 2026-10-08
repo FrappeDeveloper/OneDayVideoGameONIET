@@ -41,6 +41,19 @@ shape = SubResource("RectangleShape2D_gskgj")
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_x8kxw")
 
+[node name="hitbox" type="Area2D" parent="." unique_id=421690629]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=1861402453]
+shape = SubResource("RectangleShape2D_aqcbf")
+
+[node name="interactue_box" type="Area2D" parent="." unique_id=44202251]
+visible = false
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interactue_box" unique_id=731316620]
+shape = SubResource("CircleShape2D_aqcbf")
+
 [node name="State_machine" type="Node" parent="." unique_id=613558542 node_paths=PackedStringArray("default_state")]
 script = ExtResource("1_3c3w1")
 default_state = NodePath("Idle")
@@ -57,18 +70,5 @@ script = ExtResource("4_aqcbf")
 
 [node name="Fall" type="Node" parent="State_machine" unique_id=941203635]
 script = ExtResource("5_gskgj")
-
-[node name="hitbox" type="Area2D" parent="." unique_id=421690629]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=1861402453]
-shape = SubResource("RectangleShape2D_aqcbf")
-
-[node name="interactue_box" type="Area2D" parent="." unique_id=44202251]
-visible = false
-collision_layer = 8
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="interactue_box" unique_id=731316620]
-shape = SubResource("CircleShape2D_aqcbf")
 
 [connection signal="area_entered" from="ColorRect/attack_box" to="." method="_on_attack_box_area_entered"]
