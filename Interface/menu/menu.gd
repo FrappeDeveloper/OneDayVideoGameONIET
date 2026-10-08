@@ -22,7 +22,7 @@ func _on_iniciar_pressed() -> void:
 
 	$AnimationPlayer.play("iniciar")
 	await $AnimationPlayer.animation_finished
-	get_tree().change_scene_to_file("res://game.tscn")
+	get_tree().change_scene_to_file("res://Interface/animacion inicio/animacion_mas_alla.tscn")
 
 func _on_salir_pressed() -> void:
 	get_tree().quit()
