@@ -1,0 +1,25 @@
+~ start
+Niño: Amigo [wait=1], se te cayo
+* Miras al piso *
+Niño: La [wave]facha[/wave], me compras unas [wait=1] medeas
+Niño: 30 pesitos noma 
+- Si
+	if GameManager.gold < 30:
+		Player: Me mataste, tengo esto nomas
+		Niño: No pasa na, con eso ta bien
+		* Le das toda la plata que tenias *
+		do GameManager.increment_puntos_buenos(10)
+		do GameManager.decrease_gold(GameManager.gold)
+		Niño: Mucha gracia, Dio lo bendiga
+	else
+		Niño: Mucha gracia, Dio lo bendiga
+		do GameManager.increment_puntos_buenos(10)
+		do GameManager.decrease_gold(30)
+- No
+	Player: No tengo nada, en otra sera
+	* El niño se va enojado *
+	if GameManager.gold >= 30:
+		do GameManager.increment_puntos_malos(20)
+	else 
+		=> END
+=> END

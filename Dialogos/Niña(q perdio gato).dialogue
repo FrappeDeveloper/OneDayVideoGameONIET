@@ -11,7 +11,7 @@
 		=> dialogo
 	else
 		Niña: Eso no es el señor bola de pelo
-		La ñiña tira el objeto {{GameManager.current_wepoind.name}} a la basura 
+		* La ñiña tira el objeto {{GameManager.current_wepoind.name}} a la basura *
 		Niña: Ayudame a buscar al señor de pelo
 		do GameManager.entregar_objeto()
 		do GameManager.increment_puntos_malos(20)
