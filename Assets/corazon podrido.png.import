@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://bi0hbyop6ose4"
+=======
+uid="uid://cl0orqfpytouw"
+>>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
 path="res://.godot/imported/corazon podrido.png-8c6098de9b46ae13de5794883040d5f9.ctex"
 metadata={
 "vram_texture": false

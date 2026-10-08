@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cjxg8a8bq7sjr"
+=======
+uid="uid://dk42ws00g1ml6"
+>>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
 path="res://.godot/imported/balanza izq.png-d834aa13a63fd8cf5a69c755201d90e3.ctex"
 metadata={
 "vram_texture": false

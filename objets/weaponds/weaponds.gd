@@ -27,16 +27,20 @@ func _on_area_exited(area: Area2D) -> void:
 
 func shooted():
 	bullets-=1
+	
+	player.timer.start(delay)
 	await player.get_tree().create_timer(delay).timeout
 	player.is_waitting=false
 	if bullets==0:
 		GameManager.current_weapond=null
 		queue_free()
+		
 func punch():
 	player.is_waitting=true
 	player.attack_box.set_collision_layer_value(7,true)
 	player.attack_box.set_collision_mask_value(6,true)
-	await get_tree().create_timer(delay).timeout
+	player.timer.start(delay)
+	await player.get_tree().create_timer(delay).timeout
 	player.attack_box.set_collision_layer_value(7,false)
 	player.attack_box.set_collision_mask_value(6,false)
 	player.is_waitting=false

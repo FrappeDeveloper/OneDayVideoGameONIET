@@ -6,6 +6,8 @@
 size = Vector2(17, 1)
 
 [node name="Bullet" type="CharacterBody2D" unique_id=680028491]
+collision_layer = 16
+collision_mask = 0
 script = ExtResource("1_c6h8r")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1189508161]
@@ -13,11 +15,6 @@ offset_right = 17.0
 offset_bottom = 1.0
 color = Color(1, 0, 0, 1)
 
-[node name="attack_box" type="Area2D" parent="." unique_id=1752598005]
-position = Vector2(8, 10)
-collision_layer = 0
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="attack_box" unique_id=476888461]
-position = Vector2(0.5, -9.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1139027311]
+position = Vector2(8.5, 0.5)
 shape = SubResource("RectangleShape2D_50ftc")

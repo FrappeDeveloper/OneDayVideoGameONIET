@@ -1,23 +1,28 @@
-[gd_scene load_steps=0 format=3 uid="uid://coqnhocc8mqs2"]
+[gd_scene format=3 uid="uid://coqnhocc8mqs2"]
 
 [ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="1_yb0lw"]
 [ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="2_wx7xk"]
 [ext_resource type="PackedScene" uid="uid://by2dyfnyix528" path="res://objets/weaponds/Gun.tscn" id="3_wx7xk"]
 [ext_resource type="PackedScene" uid="uid://ce0bl12i4x055" path="res://Interface/userInterface/user_interface.tscn" id="4_fdsbi"]
+[ext_resource type="PackedScene" uid="uid://bdade0steh535" path="res://NPC/BaseNPC/base_npc.tscn" id="5_ir8wh"]
+[ext_resource type="PackedScene" uid="uid://ch60okqqddxu3" path="res://objets/weaponds/Bat.tscn" id="6_xprok"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdsbi"]
 size = Vector2(286, 20)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ir8wh"]
-
 [node name="Dasdsad" type="Node2D" unique_id=41049763]
 
-[node name="Player" parent="." unique_id=2036406556 instance=ExtResource("1_yb0lw")]
-position = Vector2(75, 11)
+[node name="WayPoints" type="Node2D" parent="." unique_id=2130162849]
+position = Vector2(122, 80)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=416271237]
+[node name="Marker2D" type="Marker2D" parent="WayPoints" unique_id=1244033692]
+position = Vector2(526, 46)
+
+[node name="Marker2D2" type="Marker2D" parent="WayPoints" unique_id=1142341510]
+position = Vector2(1120, 48)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=899337412]
+scale = Vector2(10.450555, 2.690856)
 
 [node name="Icon" type="Sprite2D" parent="StaticBody2D" unique_id=1425894746]
 position = Vector2(146.50002, 65.5)
@@ -28,17 +33,22 @@ texture = ExtResource("2_wx7xk")
 position = Vector2(142, 61)
 shape = SubResource("RectangleShape2D_fdsbi")
 
-[node name="Bat" parent="." unique_id=702910082 instance=ExtResource("3_wx7xk")]
-position = Vector2(86, 31)
+[node name="Gun" parent="." unique_id=702910082 instance=ExtResource("3_wx7xk")]
+position = Vector2(83, 113)
 bullets = 1
 
 [node name="UserInterface" parent="." unique_id=38776697 instance=ExtResource("4_fdsbi")]
 
-[node name="attack_box" type="Area2D" parent="UserInterface" unique_id=1849094554]
-position = Vector2(8, 10)
-collision_layer = 0
-collision_mask = 0
+[node name="BaseNPC" parent="." unique_id=635213196 node_paths=PackedStringArray("waypoints") instance=ExtResource("5_ir8wh")]
+position = Vector2(944, 60)
+live = 10.0
+waypoints = [NodePath("../WayPoints/Marker2D"), NodePath("../WayPoints/Marker2D2")]
+speed = 100.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="UserInterface/attack_box" unique_id=1140061734]
-position = Vector2(17, 0)
-shape = SubResource("RectangleShape2D_ir8wh")
+[node name="Player" parent="." unique_id=2036406556 instance=ExtResource("1_yb0lw")]
+position = Vector2(122, 80)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=416271237]
+
+[node name="Bat" parent="." unique_id=527997413 instance=ExtResource("6_xprok")]
+position = Vector2(149, 90)

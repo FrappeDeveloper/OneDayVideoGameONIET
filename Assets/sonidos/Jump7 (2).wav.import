@@ -2,7 +2,11 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< HEAD
 uid="uid://fbft0754a07g"
+=======
+uid="uid://c7uimcbrh3fv1"
+>>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
 path="res://.godot/imported/Jump7 (2).wav-fc3d80df47dfe82592653a7fd905feca.sample"
 
 [deps]

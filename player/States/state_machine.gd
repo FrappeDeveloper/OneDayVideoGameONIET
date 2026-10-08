@@ -17,6 +17,10 @@ func start() -> void:
 	current_state.start()
 	
 func _process(delta: float) -> void:
+	if GameManager.is_dialogue_active:
+		control_node.velocity = Vector2.ZERO
+		return
+		
 	current_state.on_process(delta)
 	
 func change_to(state_name) -> void:
@@ -26,5 +30,7 @@ func change_to(state_name) -> void:
 		start()
 
 func _input(event: InputEvent) -> void:
-	if control_node.name=="Player":
+	if GameManager.is_dialogue_active:
+		return
+	if control_node.name=="Player" :
 		current_state.on_input(event)
