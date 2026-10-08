@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://bs77bxir2ub3m"
-=======
-uid="uid://dgitgi82kmyuu"
->>>>>>> 03054f48453827ee588202eae1c90a03a2092006
+uid="uid://jhsthbc20p0a"
 path="res://.godot/imported/MournfulCalls1.wav-2b1f682a555f21bde989dbce9a38bbaa.sample"
 
 [deps]

@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://dl71vsg1ss75u"
-=======
-uid="uid://enkrhus1h1ff"
->>>>>>> 03054f48453827ee588202eae1c90a03a2092006
+uid="uid://c3acyh2fauyh0"
 path="res://.godot/imported/Boom.wav-dd14a87615b2882f83a9f731e4dd0b17.sample"
 
 [deps]

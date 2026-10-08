@@ -2,13 +2,15 @@
 
 [ext_resource type="Script" uid="uid://el1cchbcrt1u" path="res://Interface/animacion final/animacion_mas_alla_final.gd" id="1_qrtqa"]
 [ext_resource type="VideoStream" uid="uid://balxgihvh8syx" path="res://Assets/Star scene - Free M.G Stock Footage.ogv" id="2_wlyy4"]
-[ext_resource type="Texture2D" uid="uid://bed5ba0weahtj" path="res://Assets/balanza der.png" id="3_0jo3s"]
+[ext_resource type="Texture2D" uid="uid://ycbgyvgbq0ge" path="res://Assets/balanza der.png" id="3_0jo3s"]
+[ext_resource type="Texture2D" uid="uid://x4377d24g5re" path="res://Assets/infierno.png" id="3_u27j1"]
 [ext_resource type="Texture2D" uid="uid://bo2b0qqdu3goj" path="res://Assets/sonidos/balanza izq.png" id="4_u27j1"]
 [ext_resource type="Texture2D" uid="uid://cuahiewgrrde6" path="res://Assets/balanza 3.png" id="5_6bt1k"]
 [ext_resource type="Texture2D" uid="uid://0orfc5wcaun" path="res://Assets/balanza 2.png" id="6_l0ql2"]
 [ext_resource type="AudioStream" uid="uid://ukwp71geclgj" path="res://Assets/sonidos/musica_inicio.mp3" id="7_wdq5s"]
 [ext_resource type="AudioStream" uid="uid://buiv72vm0va5b" path="res://Assets/sonidos/voz destino.mp3" id="8_iv4km"]
 [ext_resource type="FontFile" uid="uid://lcekj47gs3fk" path="res://Assets/fuente/Pixelta.ttf" id="9_i3fdt"]
+[ext_resource type="Texture2D" uid="uid://wt7b0lw6u60k" path="res://Assets/cielo.png" id="11_6bt1k"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcqpt"]
 bg_color = Color(0.032967977, 0.032967996, 0.032967962, 0.6901961)
@@ -164,8 +166,17 @@ autoplay = true
 expand = true
 loop = true
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1832759775]
-position = Vector2(103, 516)
+[node name="Infierno" type="Sprite2D" parent="." unique_id=123135598]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(577.75, 326.99997)
+scale = Vector2(0.46019998, 0.5927272)
+texture = ExtResource("3_u27j1")
+
+[node name="Cielo" type="Sprite2D" parent="." unique_id=778248634]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(576.00006, 329.50003)
+scale = Vector2(0.45920005, 0.58818185)
+texture = ExtResource("11_6bt1k")
 
 [node name="Pesa" type="Node2D" parent="." unique_id=1793025489]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ycbgyvgbq0ge"
-path="res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"
+uid="uid://x4377d24g5re"
+path="res://.godot/imported/infierno.png-8d6dc10d2dde1a89e571d9614e3784b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza der.png"
-dest_files=["res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"]
+source_file="res://Assets/infierno.png"
+dest_files=["res://.godot/imported/infierno.png-8d6dc10d2dde1a89e571d9614e3784b8.ctex"]
 
 [params]
 

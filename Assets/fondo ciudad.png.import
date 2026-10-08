@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ycbgyvgbq0ge"
-path="res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"
+uid="uid://cfmterofojwoq"
+path="res://.godot/imported/fondo ciudad.png-3dc5b1e282e08d1393e4d8d76a09f8fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza der.png"
-dest_files=["res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"]
+source_file="res://Assets/fondo ciudad.png"
+dest_files=["res://.godot/imported/fondo ciudad.png-3dc5b1e282e08d1393e4d8d76a09f8fd.ctex"]
 
 [params]
 

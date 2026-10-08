@@ -5,6 +5,8 @@ extends Node2D
 @onready var musica: AudioStreamPlayer = $MusicaMenu
 
 @onready var pesa: Node2D = $Pesa
+@onready var infierno: Sprite2D = $Infierno
+@onready var cielo: Sprite2D = $Cielo
 
 var reproduciendo := false
 
@@ -31,8 +33,7 @@ func _physics_process(delta: float):
 		await esperar_y_desaparecer(4.0)
 		if GameManager.puntos_buenos<GameManager.puntos_malos:
 			final_malo()
-		elif GameManager.puntos_buenos/2<=GameManager.puntos_malos :
-			final_neutro()
+
 		else:
 			final_bueno()
 			
@@ -42,22 +43,25 @@ func _physics_process(delta: float):
 func final_malo():
 	await mostrar_texto("Y en solo 24 horas has hecho demasiado mal")
 	await esperar_y_desaparecer()
-
+	infierno.modulate+=Color(0.0, 0.0, 0.0, 0.204)
+	pesa.modulate-=Color(0.0, 0.0, 0.0, 0.267)
 	await mostrar_texto("Poner en peligro personas")
 	await esperar_y_desaparecer(2.0)
-
+	infierno.modulate+=Color(0.0, 0.0, 0.0, 0.204)
+	pesa.modulate-=Color(0.0, 0.0, 0.0, 0.267)
 	await mostrar_texto("Engañarlas")
 	await esperar_y_desaparecer(1.0)
-
+	infierno.modulate+=Color(0.0, 0.0, 0.0, 0.204)
+	pesa.modulate-=Color(0.0, 0.0, 0.0, 0.267)
 	await mostrar_texto("Lastimarlas")
 	await esperar_y_desaparecer(1.0)
-
+	infierno.modulate=Color(0.0, 0.0, 0.0, 1)
 	await mostrar_texto("Te dimos UNA oportunidad... y la aprobechaste para hacer el mal")
 	await esperar_y_desaparecer()
-
+	
 	await mostrar_texto("AHORA SUFRE EL CASTIGO ETERNO")
-
-	await get_tree().create_timer(1.0).timeout
+	pesa.modulate=Color(0.0, 0.0, 0.0, 0)
+	await get_tree().create_timer(2.0).timeout
 
 	await fadeout_final()
 
@@ -96,25 +100,29 @@ func final_bueno():
 
 	await mostrar_texto("Ayudar a las personas")
 	await esperar_y_desaparecer(1.0)
+	cielo.modulate+=Color(0.0, 0.0, 0.0, 0.204)
 
 	await mostrar_texto("Respetandolas")
 	await esperar_y_desaparecer(1.0)
+	cielo.modulate+=Color(0.0, 0.0, 0.0, 0.204)
 
 	await mostrar_texto("No solo te hacias un bien a ti mismo, si no a ellas, al mundo")
 	await esperar_y_desaparecer(1.0)
+	cielo.modulate+=Color(0.0, 0.0, 0.0, 0.204)
 
 	await mostrar_texto("Aunque en tu vida antes de morir no fueras la de una mala persona, siempre fuiste mezquino con el bien que podrias hacer")
 	await esperar_y_desaparecer()
-
+	cielo.modulate+=Color(0.0, 0.0, 0.0, 0.204)
+	pesa.modulate-=Color(0.0, 0.0, 0.0, 0.267)
 	await mostrar_texto("Y siempre que pudiste hacer un poco mas de bien, decidiste que no, que no valia tu tu esfuerzo")
 	await esperar_y_desaparecer()
-
+	pesa.modulate-=Color(0.0, 0.0, 0.0, 0.267)
 	await mostrar_texto("Por eso, al fin alcanzaste el cielo, esta prueba era para que aprendieras una cosa, siempre se puede hacer un poco mas")
 	await esperar_y_desaparecer()
-
+	pesa.modulate-=Color(0.0, 0.0, 0.0, 0.267)
 	await mostrar_texto("Y no creas que tu aprendizaje fue demasiado tarde , tus acciones en la tierra lo transmitiran")
 	await esperar_y_desaparecer()
-	
+	pesa.modulate-=Color(0.0, 0.0, 0.0, 0.267)
 	await mostrar_texto("Por eso, lo lograte")
 	await get_tree().create_timer(1.0).timeout
 	await mostrar_texto("Llegaste al cielo")
