@@ -1,0 +1,14 @@
+~ start
+- Hablar
+	Niña: Oficial, se a escapado el señor bola de pelo [wait=1], ¿me ayudarias a encontrarlo?
+- Dar Objeto
+	if GameManager.current_weapond.name == "Gato"
+		Niña: [wave] ¡¡Señor bola de pelo!! [/wave][wait=1], muchas gracias oficial
+		do GameManager.entregar_objeto()
+	else
+		Niña: Eso no es el señor bola de pelo
+		La ñiña tira el objeto {{GameManager.current_wepoind.name}} a la basura 
+		Niña: Ayudame a buscar al señor de pelo
+		do GameManager.entregar_objeto()
+- Ignorar => END
+=> END
