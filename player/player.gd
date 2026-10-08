@@ -56,3 +56,7 @@ func _input(event: InputEvent) -> void:
 		get_parent().add_child(drop)
 		GameManager.current_weapond.queue_free()
 		GameManager.current_weapond=null
+
+
+func _on_timer_timeout() -> void:
+	get_tree().change_scene_to_file("res://Interface/animacion final/animacion_mas_alla_final.tscn")

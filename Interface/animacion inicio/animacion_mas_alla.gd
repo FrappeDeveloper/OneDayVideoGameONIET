@@ -49,10 +49,10 @@ func _physics_process(delta: float):
 
 		await fadeout_final()
 
-		get_tree().change_scene_to_file("res://interface/menu/menu.tscn")
+		get_tree().change_scene_to_file("res://maps/mundo.tscn")
 		
 	if Input.is_action_just_pressed("Jump"):
-		pass
+		get_tree().change_scene_to_file("res://maps/mundo.tscn")
 
 func mostrar_texto(nuevo_texto: String):
 	texto.text = ""

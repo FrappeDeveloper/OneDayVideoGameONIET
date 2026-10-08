@@ -1,8 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://b1e0hqx3rj27t"]
+[gd_scene format=3 uid="uid://b1e0hqx3rj27t"]
 
 [ext_resource type="Script" uid="uid://c01cwa2uwqklu" path="res://Interface/animacion inicio/animacion_mas_alla.gd" id="1_t10gf"]
 [ext_resource type="VideoStream" uid="uid://balxgihvh8syx" path="res://Assets/Star scene - Free M.G Stock Footage.ogv" id="1_wmue1"]
-[ext_resource type="Texture2D" uid="uid://b8vt8rie2p6dn" path="res://Assets/balanza der.png" id="2_t10gf"]
+[ext_resource type="Texture2D" uid="uid://ycbgyvgbq0ge" path="res://Assets/balanza der.png" id="2_t10gf"]
 [ext_resource type="Texture2D" uid="uid://bo2b0qqdu3goj" path="res://Assets/sonidos/balanza izq.png" id="3_i6kjb"]
 [ext_resource type="Texture2D" uid="uid://cuahiewgrrde6" path="res://Assets/balanza 3.png" id="4_jcqpt"]
 [ext_resource type="Texture2D" uid="uid://0orfc5wcaun" path="res://Assets/balanza 2.png" id="5_d83js"]
@@ -205,9 +205,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1102750926]
-libraries = {
-&"": SubResource("AnimationLibrary_2eeg7")
-}
+libraries/ = SubResource("AnimationLibrary_2eeg7")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1710498927]
 offset_left = -36.0
