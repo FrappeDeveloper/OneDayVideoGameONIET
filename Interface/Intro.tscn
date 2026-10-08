@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://sqspju6me24g"]
 
-[ext_resource type="Script" uid="uid://dow7wp5wo7ts" path="res://Menu/intro.gd" id="1_0cim3"]
-[ext_resource type="AudioStream" uid="uid://63pqn64t7npd" path="res://Menu/sondangsirait419-tikus-220067.mp3" id="2_0cim3"]
-[ext_resource type="Texture2D" uid="uid://cbrkukw62x821" path="res://assets/1000240443.png" id="2_5sjug"]
+[ext_resource type="Script" uid="uid://dow7wp5wo7ts" path="res://Interface/intro.gd" id="1_0cim3"]
+[ext_resource type="Texture2D" uid="uid://mbn2qihy12sq" path="res://Assets/1000240443.png" id="2_vyp3k"]
+[ext_resource type="AudioStream" uid="uid://8n784qv2f27u" path="res://Assets/sonidos/sondangsirait419-tikus-220067.mp3" id="3_vyp3k"]
 
 [sub_resource type="Animation" id="Animation_5sjug"]
 resource_name = "Inicio"
@@ -78,7 +78,7 @@ offset_bottom = 695.0
 self_modulate = Color(1, 1, 1, 0)
 position = Vector2(555, 318)
 scale = Vector2(0.5839844, 0.5839843)
-texture = ExtResource("2_5sjug")
+texture = ExtResource("2_vyp3k")
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1090312879]
 offset_left = -27.0
@@ -93,5 +93,5 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1982431615]
-stream = ExtResource("2_0cim3")
+stream = ExtResource("3_vyp3k")
 autoplay = true
