@@ -1,107 +1,70 @@
-[gd_scene load_steps=18 format=3 uid="uid://b1e0hqx3rj27t"]
+[gd_scene load_steps=15 format=3 uid="uid://b1e0hqx3rj27t"]
 
+[ext_resource type="Script" uid="uid://c01cwa2uwqklu" path="res://Interface/animacion inicio/animacion_mas_alla.gd" id="1_t10gf"]
 [ext_resource type="VideoStream" uid="uid://balxgihvh8syx" path="res://Assets/Star scene - Free M.G Stock Footage.ogv" id="1_wmue1"]
-[ext_resource type="Texture2D" uid="uid://dkb7mf7w8i3me" path="res://Assets/balanza der.png" id="2_t10gf"]
+[ext_resource type="Texture2D" uid="uid://b8vt8rie2p6dn" path="res://Assets/balanza der.png" id="2_t10gf"]
 [ext_resource type="Texture2D" uid="uid://bo2b0qqdu3goj" path="res://Assets/sonidos/balanza izq.png" id="3_i6kjb"]
 [ext_resource type="Texture2D" uid="uid://cuahiewgrrde6" path="res://Assets/balanza 3.png" id="4_jcqpt"]
 [ext_resource type="Texture2D" uid="uid://0orfc5wcaun" path="res://Assets/balanza 2.png" id="5_d83js"]
-[ext_resource type="FontFile" uid="uid://btl0bu5b8j4yg" path="res://Assets/fuente/Moderno.ttf" id="6_vmcbq"]
 [ext_resource type="AudioStream" uid="uid://ukwp71geclgj" path="res://Assets/sonidos/musica_inicio.mp3" id="7_g5om1"]
+[ext_resource type="AudioStream" uid="uid://buiv72vm0va5b" path="res://Assets/sonidos/voz destino.mp3" id="8_i6kjb"]
+[ext_resource type="FontFile" uid="uid://lcekj47gs3fk" path="res://Assets/fuente/Pixelta.ttf" id="9_jcqpt"]
 
-[sub_resource type="Theme" id="Theme_g8w4i"]
-default_font = ExtResource("6_vmcbq")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_71255"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dn6yn"]
-bg_color = Color(1, 1, 1, 1)
-
-[sub_resource type="Theme" id="Theme_23bko"]
-default_font = ExtResource("6_vmcbq")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4fef7"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xh7eu"]
-bg_color = Color(0, 0, 0, 1)
-corner_detail = 20
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcqpt"]
+bg_color = Color(0.032967977, 0.032967996, 0.032967962, 0.6901961)
 
 [sub_resource type="Animation" id="Animation_concx"]
 resource_name = "Movimiento"
-length = 4.5
+length = 3.2
 loop_mode = 1
+capture_included = true
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath("techo:position")
-tracks/0/interp = 1
+tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5, 3.0192423),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(602.25, 401.25), Vector2(593, 400), Vector2(607.6073, 400.6297)]
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 2,
+"values": [Vector2(602.25, 401.25), Vector2(593, 400), Vector2(602.25, 401.25), Vector2(607.6073, 400.6297), Vector2(602.25, 401.25)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/path = NodePath("techo:rotation")
-tracks/1/interp = 1
+tracks/1/interp = 0
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.5, 3.0201943),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [0.0, 0.08726646, -0.04363323]
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 2,
+"values": [0.0, 0.08726646, 0.0, -0.04363323, 0.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/path = NodePath("pesa1:position")
-tracks/2/interp = 1
+tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.5, 3.027043),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(603.25, 392.25), Vector2(604, 374), Vector2(603.6183, 397.28958)]
+"values": [Vector2(603.25, 392.25), Vector2(604, 374), Vector2(603.25, 392.25), Vector2(603.6183, 397.28958), Vector2(603.25, 392.25)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/path = NodePath("pesa2:position")
-tracks/3/interp = 1
+tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 1.5, 3.027043),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(956.99994, 389.99997), Vector2(956.99994, 405.99994), Vector2(956.99994, 382.8557)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("salir:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(-0.03333333, 1.4, 3.0333333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(382.9999, 466), Vector2(383, 450), Vector2(383, 471.295)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("iniciar:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0, 1.4, 3.0333333),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(736.99994, 462), Vector2(737, 480.3), Vector2(737, 460.301)]
+"values": [Vector2(956.99994, 389.99997), Vector2(956.99994, 405.99994), Vector2(956.99994, 389.99997), Vector2(956.99994, 382.8557), Vector2(956.99994, 389.99997)]
 }
 
 [sub_resource type="Animation" id="Animation_k6kuu"]
@@ -157,34 +120,10 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("salir:position")
+tracks/4/path = NodePath("ColorRect:color")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(382.9999, 466)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("iniciar:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(736.99994, 462)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("ColorRect:color")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -215,6 +154,7 @@ _data = {
 }
 
 [node name="AnimacionMasAlla" type="Node2D" unique_id=850766657]
+script = ExtResource("1_t10gf")
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1795674230]
 offset_right = 1154.0
@@ -223,10 +163,6 @@ stream = ExtResource("1_wmue1")
 autoplay = true
 expand = true
 loop = true
-
-[node name="Label" type="Label" parent="." unique_id=472566543]
-offset_right = 40.0
-offset_bottom = 23.0
 
 [node name="pesa1" type="Sprite2D" parent="." unique_id=393501868]
 position = Vector2(603.25, 392.25)
@@ -248,27 +184,30 @@ position = Vector2(602.25, 385.25)
 scale = Vector2(0.359, 0.359)
 texture = ExtResource("5_d83js")
 
-[node name="iniciar" type="Button" parent="." unique_id=1920622934]
-offset_left = 736.99994
-offset_top = 462.0
-offset_right = 797.99994
-offset_bottom = 493.0
-scale = Vector2(1.52, 1.52)
-theme = SubResource("Theme_g8w4i")
-theme_override_styles/normal = SubResource("StyleBoxFlat_71255")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_dn6yn")
-text = "Iniciar"
+[node name="MusicaMenu" type="AudioStreamPlayer" parent="." unique_id=269371890]
+stream = ExtResource("7_g5om1")
+autoplay = true
 
-[node name="salir" type="Button" parent="." unique_id=492318163]
-offset_left = 382.9999
-offset_top = 466.0
-offset_right = 439.9999
-offset_bottom = 497.0
-scale = Vector2(1.52, 1.52)
-theme = SubResource("Theme_23bko")
-theme_override_styles/normal = SubResource("StyleBoxFlat_4fef7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_xh7eu")
-text = "Salir"
+[node name="TextAudio" type="AudioStreamPlayer" parent="." unique_id=401172188]
+stream = ExtResource("8_i6kjb")
+autoplay = true
+
+[node name="texto" type="Label" parent="." unique_id=472566543]
+offset_left = 103.0
+offset_top = 516.0
+offset_right = 1067.0
+offset_bottom = 627.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("9_jcqpt")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jcqpt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1102750926]
+libraries = {
+&"": SubResource("AnimationLibrary_2eeg7")
+}
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1710498927]
 offset_left = -36.0
@@ -276,12 +215,3 @@ offset_top = -12.0
 offset_right = 1194.0
 offset_bottom = 666.0
 color = Color(0, 0, 0, 0)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1329002978]
-libraries = {
-&"": SubResource("AnimationLibrary_2eeg7")
-}
-
-[node name="MusicaMenu" type="AudioStreamPlayer2D" parent="." unique_id=1580016179]
-stream = ExtResource("7_g5om1")
-autoplay = true

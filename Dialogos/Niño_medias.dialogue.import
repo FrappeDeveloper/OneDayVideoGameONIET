@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://beuwvrsjqjqb7"
+path="res://.godot/imported/Niño_medias.dialogue-4bcf18bbb039839bab9648750ac39cee.tres"
+
+[deps]
+
+source_file="res://Dialogos/Niño_medias.dialogue"
+dest_files=["res://.godot/imported/Niño_medias.dialogue-4bcf18bbb039839bab9648750ac39cee.tres"]
+
+[params]
+
+defaults=true

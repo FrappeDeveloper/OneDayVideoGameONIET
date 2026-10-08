@@ -1,0 +1,24 @@
+~ start
+- Hablar
+	~ dialogo
+	Fisura: Dame un [wave]pucho[/wave] [wait=2] * cough cough
+	Player: ¿Estas bien?
+	Fisura: Que te importa hermano, dame un pucho
+	Player: ...
+	Fisura: Eh maestro ¿me das un cigarrillo?
+- Dar Objeto
+	if GameManager.current_weapond.name == "Pucho"
+		Fisura: [wave]eesaaaa, gracias hermano[/wave]
+		Fisura: [wave]Bendiciones[/wave]
+		do GameManager.entregar_objeto()
+		do GameManager.increment_puntos_buenos(15)
+	elif GameManager.current_weapond.name == null
+		=> dialogo
+	elif GameManager.current_weapond.name != "Pucho"
+		Fisura:[wave] Esto no se fuma hemano[/wave]
+		do GameManager.increment_puntos_malos(10)
+	
+		
+
+- Ignorar => END
+=> END

@@ -2,7 +2,15 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< HEAD
 uid="uid://c1y7x0co3tun3"
+=======
+<<<<<<< HEAD
+uid="uid://duruqkielxwmt"
+=======
+uid="uid://c1y7x0co3tun3"
+>>>>>>> f3d1958823a9ecb983f367aebd8dca9cfea54212
+>>>>>>> 5730f6415d6920fc07a64e0fefed47380aafaf81
 path="res://.godot/imported/CodecWarble3.wav-916019043b7653193fd53ed33f67a14c.sample"
 
 [deps]
