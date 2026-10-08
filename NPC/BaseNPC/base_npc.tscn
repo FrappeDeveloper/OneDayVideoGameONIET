@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bdade0steh535"]
+
+[ext_resource type="Script" uid="uid://ddtuesvagna30" path="res://NPC/BaseNPC/base_npc.gd" id="1_ev3w5"]
+[ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="1_vi26n"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ev3w5"]
+radius = 30.0
+height = 112.0
+
+[node name="BaseNPC" type="CharacterBody2D" unique_id=635213196]
+script = ExtResource("1_ev3w5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=663468098]
+texture = ExtResource("1_vi26n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=707675974]
+shape = SubResource("CapsuleShape2D_ev3w5")
+
+[node name="Timer" type="Timer" parent="." unique_id=1014662616]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
