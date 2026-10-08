@@ -5,7 +5,7 @@ const speed = 300.0
 const jump_force = -400.0
 const acceleration =50
 const jump_acceleration = 60.0
-const gravity = 1800.0
+const gravity = 1000.0
 
 var direction=Vector2.ZERO
 func _physics_process(delta: float) -> void:
