@@ -2,6 +2,14 @@
 
 [ext_resource type="Script" uid="uid://bk242wpsabpnp" path="res://Interface/userInterface/user_interface.gd" id="1_3w8bo"]
 
+[sub_resource type="Animation" id="Animation_xm4lh"]
+resource_name = "delay"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ggv3h"]
+_data = {
+&"delay": SubResource("Animation_xm4lh")
+}
+
 [node name="UserInterface" type="CanvasLayer" unique_id=38776697]
 script = ExtResource("1_3w8bo")
 
@@ -19,6 +27,17 @@ offset_right = 1192.0
 offset_bottom = 685.0
 scale = Vector2(0.48600447, 0.497487)
 color = Color(0, 0, 0, 1)
+
+[node name="delay" type="ColorRect" parent="." unique_id=396744439]
+offset_left = 1105.6526
+offset_top = 608.6252
+offset_right = 1187.6411
+offset_bottom = 684.6673
+rotation = 3.1415927
+color = Color(1, 1, 1, 0.5058824)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="delay" unique_id=472331118]
+libraries/ = SubResource("AnimationLibrary_ggv3h")
 
 [node name="Bullets Count" type="Label" parent="." unique_id=1018459907]
 offset_left = 1009.0

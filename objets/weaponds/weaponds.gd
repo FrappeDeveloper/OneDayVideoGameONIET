@@ -15,8 +15,8 @@ func _ready() -> void:
 
 func _input(event: InputEvent) -> void:
 		
-	if Input.is_action_just_pressed("Interactue") and can_take and player.current_weapond==null:
-		player.current_weapond=duplicate()
+	if Input.is_action_just_pressed("Interactue") and can_take and GameManager.current_weapond==null:
+		GameManager.current_weapond=duplicate()
 		queue_free()
 
 func _on_area_entered(area: Area2D) -> void:
@@ -30,7 +30,7 @@ func shooted():
 	await player.get_tree().create_timer(delay).timeout
 	player.is_waitting=false
 	if bullets==0:
-		player.current_weapond=null
+		GameManager.current_weapond=null
 		queue_free()
 func punch():
 	player.is_waitting=true
