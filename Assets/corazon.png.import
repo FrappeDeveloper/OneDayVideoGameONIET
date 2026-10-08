@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkb7mf7w8i3me"
-path="res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"
+uid="uid://bjvw3lo0yp4yt"
+path="res://.godot/imported/corazon.png-aec058ee9171575e9b58d98a87ece52a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza der.png"
-dest_files=["res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"]
+source_file="res://Assets/corazon.png"
+dest_files=["res://.godot/imported/corazon.png-aec058ee9171575e9b58d98a87ece52a.ctex"]
 
 [params]
 
