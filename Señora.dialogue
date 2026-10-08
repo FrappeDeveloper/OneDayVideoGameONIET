@@ -1,0 +1,21 @@
+~ start
+- Hablar
+	Doña: Hola mijo, no encuentro mis lentes
+	Doña: Los podrias buscar porfavor, te podre dar una compensacion
+	
+- Dar Objeto
+	if GameManager.current_weapond.name == "Lentes"
+		Doña: Muchas gracias querido, toma esto por las molestias
+		* Te da 50 pesos *
+		do GameManager.increment_gold(50)
+		do GameManager.increment_puntos_buenos(10)
+	elif GameManager.current_weapond.name == "Gun" or GameManager.current_weapond.name == 'Bat'
+		Doña: ¡¡PERO QUE ES ESTO!!
+		* La señora se va enojada *
+		do GameManager.increment_puntos_malos()(10)
+	elif GameManager.current_weapond.name == null
+		Doña: Ayudame a buscar mi lentes
+	else
+		Doña: Esos no son mis lentes, los podrias buscar
+- Ignorar => END
+=> END

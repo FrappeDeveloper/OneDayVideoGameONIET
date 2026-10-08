@@ -28,11 +28,13 @@ func increment_gold(gold_amount):
 ## Funciones q tengan objetos
 
 var current_weapond
+var objeto_a_recibir: String
 
 func entregar_objeto():
 	current_weapond.queue_free()
 	current_weapond = null
 
 func recibir_objeto():
-	return
+	current_weapond.queue_free()
+	current_weapond = load("").instantiate()
 	
