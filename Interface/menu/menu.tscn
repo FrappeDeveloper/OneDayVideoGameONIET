@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://byay21x5cf57i"]
+
+[ext_resource type="Script" uid="uid://bsu7p4mtlbdcy" path="res://Interface/menu/menu.gd" id="1_virqb"]
+
+[node name="Menu" type="CanvasLayer" unique_id=1951492679]
+script = ExtResource("1_virqb")
+
+[node name="Button" type="Button" parent="." unique_id=485113221]
+offset_right = 8.0
+offset_bottom = 8.0
