@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://e1uuglc25pus"
+path="res://.godot/imported/Comienzo_cualquiera.dialogue-356105ffed4e576e5ec5b07058b75468.tres"
+
+[deps]
+
+source_file="res://Dialogos/Comienzo_cualquiera.dialogue"
+dest_files=["res://.godot/imported/Comienzo_cualquiera.dialogue-356105ffed4e576e5ec5b07058b75468.tres"]
+
+[params]
+
+defaults=true
