@@ -13,7 +13,7 @@
 		Fisura: [wave]Bendiciones[/wave]
 		do GameManager.entregar_objeto()
 		do GameManager.increment_puntos_buenos(15)
-	elif GameManager.current_weapond.name == null
+	elif GameManager.current_weapond.name == 'null'
 		Fisura: [wave]No tenes na en la mano hemano[/wave]
 	elif GameManager.current_weapond.name != "Pucho"
 		Fisura:[wave] Esto no se fuma hemano[/wave]

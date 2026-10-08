@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://mq6k3ghiyqw5"
-=======
-uid="uid://n1c1583rw2g1"
->>>>>>> 03054f48453827ee588202eae1c90a03a2092006
-path="res://.godot/imported/balanza izq.png-d834aa13a63fd8cf5a69c755201d90e3.ctex"
+uid="uid://c5tdhn33e6f5m"
+path="res://.godot/imported/npcl.png-fe4f5173ea3387abe23eab33ac7ae5de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza izq.png"
-dest_files=["res://.godot/imported/balanza izq.png-d834aa13a63fd8cf5a69c755201d90e3.ctex"]
+source_file="res://Assets/npcl.png"
+dest_files=["res://.godot/imported/npcl.png-fe4f5173ea3387abe23eab33ac7ae5de.ctex"]
 
 [params]
 

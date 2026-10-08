@@ -27,7 +27,7 @@ func increment_gold(gold_amount):
 
 ## Funciones q tengan objetos
 
-var current_weapond
+var current_weapond = null
 var objeto_a_recibir: String
 
 func entregar_objeto():

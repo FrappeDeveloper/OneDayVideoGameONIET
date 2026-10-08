@@ -17,7 +17,7 @@ func on_process(delta: float) -> void:
 		print(8)
 		state_machine.change_to("Idle")
 
-
+	
 		
 	if control_node.is_waiting or GameManager.is_dialogue_active:
 		return

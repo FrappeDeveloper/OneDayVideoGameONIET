@@ -4,16 +4,15 @@ extends CharacterBody2D
 @export var waypoints: Array[Marker2D]
 @export var speed: float
 
-
+@onready var sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var alert: Sprite2D = $Exclamation
 @onready var state_machine: State_machine = $State_machine
 
-@onready var sprite_2d: Sprite2D = $Sprite2D
 
 var current_index = 0
 var is_waiting = false
 var is_player_close = false
-var my_dialogue = preload("uid://6e1negb04ie1")
+var my_dialogue = preload("uid://bu6y17okny7lu")
 
 var player
 
@@ -23,7 +22,8 @@ func _ready() -> void:
 	DialogueManager.dialogue_ended.connect(_on_dialogue_ended)
 
 func _physics_process(delta: float) -> void:
-	sprite_2d.scale.x=abs(sprite_2d.scale.x)*sign(velocity.x)
+	if velocity.x!=0:
+		sprite_2d.scale.x=abs(sprite_2d.scale.x)*sign(velocity.x)
 	move_and_slide()
 
 

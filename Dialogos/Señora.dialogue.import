@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://drab5m5aleka8"
+path="res://.godot/imported/Señora.dialogue-c57bf618c0a49fcebe5acc096ae0eca3.tres"
+
+[deps]
+
+source_file="res://Dialogos/Señora.dialogue"
+dest_files=["res://.godot/imported/Señora.dialogue-c57bf618c0a49fcebe5acc096ae0eca3.tres"]
+
+[params]
+
+defaults=true
