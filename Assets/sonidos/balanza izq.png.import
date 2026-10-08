@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0orfc5wcaun"
-path="res://.godot/imported/balanza 2.png-c2e12dbdd74a370b3689dfe0be6aca0c.ctex"
+uid="uid://bo2b0qqdu3goj"
+path="res://.godot/imported/balanza izq.png-ec651013f74d318f698418b652060b5c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza 2.png"
-dest_files=["res://.godot/imported/balanza 2.png-c2e12dbdd74a370b3689dfe0be6aca0c.ctex"]
+source_file="res://Assets/sonidos/balanza izq.png"
+dest_files=["res://.godot/imported/balanza izq.png-ec651013f74d318f698418b652060b5c.ctex"]
 
 [params]
 
