@@ -2,11 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://b5xn0y6keida2"
-=======
-uid="uid://cya5o6qfcnng3"
->>>>>>> 01c479230a97381db475dcca140b0cb76c18822f
+uid="uid://dxm3pdrggslur"
 path="res://.godot/imported/Random.wav-04618a264e53e41146e92aa681503d28.sample"
 
 [deps]

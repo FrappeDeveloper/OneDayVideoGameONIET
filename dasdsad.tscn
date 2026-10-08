@@ -1,10 +1,11 @@
-[gd_scene load_steps=0 format=3 uid="uid://coqnhocc8mqs2"]
+[gd_scene format=3 uid="uid://coqnhocc8mqs2"]
 
 [ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="1_yb0lw"]
 [ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="2_wx7xk"]
 [ext_resource type="PackedScene" uid="uid://by2dyfnyix528" path="res://objets/weaponds/Gun.tscn" id="3_wx7xk"]
 [ext_resource type="PackedScene" uid="uid://ce0bl12i4x055" path="res://Interface/userInterface/user_interface.tscn" id="4_fdsbi"]
 [ext_resource type="PackedScene" uid="uid://bdade0steh535" path="res://NPC/BaseNPC/base_npc.tscn" id="5_ir8wh"]
+[ext_resource type="PackedScene" uid="uid://ch60okqqddxu3" path="res://objets/weaponds/Bat.tscn" id="6_xprok"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdsbi"]
 size = Vector2(286, 20)
@@ -40,10 +41,14 @@ bullets = 1
 
 [node name="BaseNPC" parent="." unique_id=635213196 node_paths=PackedStringArray("waypoints") instance=ExtResource("5_ir8wh")]
 position = Vector2(944, 60)
+live = 10.0
 waypoints = [NodePath("../WayPoints/Marker2D"), NodePath("../WayPoints/Marker2D2")]
-speed = 200.0
+speed = 100.0
 
 [node name="Player" parent="." unique_id=2036406556 instance=ExtResource("1_yb0lw")]
 position = Vector2(122, 80)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=416271237]
+
+[node name="Bat" parent="." unique_id=527997413 instance=ExtResource("6_xprok")]
+position = Vector2(149, 90)

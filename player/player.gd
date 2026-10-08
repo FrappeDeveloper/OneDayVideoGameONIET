@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-@onready var attack_box: Area2D = $ColorRect/attack_box
+@onready var attack_box: Area2D = $sprite/attack_box
+@onready var sprite: ColorRect = $sprite
 
 
 const speed = 300.0
@@ -26,11 +27,14 @@ func _physics_process(delta: float) -> void:
 		velocity.y += gravity * delta
 
 	direction.x = Input.get_axis("Left", "Right")
-
+	
+	if direction.x:
+		sprite.scale.x=abs(sprite.scale.x)*direction.x
+	
 	move_and_slide()
 
 func _input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("Click") and GameManager.current_weapond!=null and not is_waitting:
+	if Input.is_action_just_pressed("Click") and GameManager.current_weapond!=null and not is_waitting and not GameManager.is_dialogue_active:
 		if GameManager.current_weapond.kind=="Mele":
 			GameManager.current_weapond.punch()
 		else:
