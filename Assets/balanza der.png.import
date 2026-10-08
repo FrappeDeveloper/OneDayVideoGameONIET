@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b8vt8rie2p6dn"
+=======
+uid="uid://e4jvfk3y0edn"
+>>>>>>> f3d1958823a9ecb983f367aebd8dca9cfea54212
 path="res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"
 metadata={
 "vram_texture": false
