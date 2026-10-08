@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ch60okqqddxu3"]
+
+[ext_resource type="Script" uid="uid://vdjgnmypvx0g" path="res://objets/weaponds/weaponds.gd" id="1_xfw5y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_41x68"]
+radius = 72.0
+
+[node name="Bat" type="Area2D" unique_id=702910082]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("1_xfw5y")
+damage = 5
+delay = 1
+kind = "Mele"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=477102671]
+offset_left = 17.079504
+offset_top = -17.079504
+offset_right = 20.199726
+offset_bottom = 12.686928
+rotation = 0.7853982
+color = Color(0.5223269, 0.28197512, 9.62615e-08, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=850723010]
+shape = SubResource("CircleShape2D_41x68")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

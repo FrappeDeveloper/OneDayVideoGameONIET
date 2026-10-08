@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://coqnhocc8mqs2"]
+[gd_scene format=3 uid="uid://coqnhocc8mqs2"]
 
 [ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="1_yb0lw"]
 [ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="2_wx7xk"]
@@ -7,8 +7,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdsbi"]
 size = Vector2(286, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ir8wh"]
 
 [node name="Dasdsad" type="Node2D" unique_id=41049763]
 
@@ -30,15 +28,5 @@ shape = SubResource("RectangleShape2D_fdsbi")
 
 [node name="Bat" parent="." unique_id=702910082 instance=ExtResource("3_wx7xk")]
 position = Vector2(86, 31)
-bullets = 1
 
 [node name="UserInterface" parent="." unique_id=38776697 instance=ExtResource("4_fdsbi")]
-
-[node name="attack_box" type="Area2D" parent="UserInterface" unique_id=1849094554]
-position = Vector2(8, 10)
-collision_layer = 0
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="UserInterface/attack_box" unique_id=1140061734]
-position = Vector2(17, 0)
-shape = SubResource("RectangleShape2D_ir8wh")

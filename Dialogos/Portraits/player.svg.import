@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://dkb7mf7w8i3me"
-=======
-uid="uid://b5vgnibvh2u13"
->>>>>>> 01c479230a97381db475dcca140b0cb76c18822f
-path="res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"
+uid="uid://d3jo0g3a46q36"
+path="res://.godot/imported/player.svg-6982829589845229a6c272b097f1d091.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza der.png"
-dest_files=["res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"]
+source_file="res://Dialogos/Portraits/player.svg"
+dest_files=["res://.godot/imported/player.svg-6982829589845229a6c272b097f1d091.ctex"]
 
 [params]
 
@@ -42,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

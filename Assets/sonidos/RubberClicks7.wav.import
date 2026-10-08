@@ -2,7 +2,11 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< HEAD
 uid="uid://boq2qd4wnqr37"
+=======
+uid="uid://h8rp66tb83v"
+>>>>>>> 01c479230a97381db475dcca140b0cb76c18822f
 path="res://.godot/imported/RubberClicks7.wav-9a4b542489c20ef05d9fcca1e12368ac.sample"
 
 [deps]
