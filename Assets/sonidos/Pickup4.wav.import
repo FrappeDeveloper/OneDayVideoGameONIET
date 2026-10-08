@@ -2,19 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-<<<<<<< HEAD
-uid="uid://docmr7leo0gda"
-=======
-<<<<<<< HEAD
-uid="uid://bt7exbm13jm0x"
-=======
-<<<<<<< HEAD
-uid="uid://dh5xpngle0mg2"
-=======
-uid="uid://p3ltkw74ncod"
->>>>>>> b4459d9c4c843f0a47777b54c2f1466e0090d0f6
->>>>>>> 8637e12a2c8752e5f8464e718207b73f34448092
->>>>>>> b766162d7f752e1782c714ddf99558a565aecbe9
+uid="uid://ccqbumqne88h0"
 path="res://.godot/imported/Pickup4.wav-2d9f37891d2f382849ecc9b1ea78dc7d.sample"
 
 [deps]

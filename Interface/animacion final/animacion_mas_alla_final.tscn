@@ -1,0 +1,221 @@
+[gd_scene format=3 uid="uid://5ijk7qhpoev7"]
+
+[ext_resource type="Script" uid="uid://el1cchbcrt1u" path="res://Interface/animacion final/animacion_mas_alla_final.gd" id="1_qrtqa"]
+[ext_resource type="VideoStream" uid="uid://balxgihvh8syx" path="res://Assets/Star scene - Free M.G Stock Footage.ogv" id="2_wlyy4"]
+[ext_resource type="Texture2D" uid="uid://bed5ba0weahtj" path="res://Assets/balanza der.png" id="3_0jo3s"]
+[ext_resource type="Texture2D" uid="uid://bo2b0qqdu3goj" path="res://Assets/sonidos/balanza izq.png" id="4_u27j1"]
+[ext_resource type="Texture2D" uid="uid://cuahiewgrrde6" path="res://Assets/balanza 3.png" id="5_6bt1k"]
+[ext_resource type="Texture2D" uid="uid://0orfc5wcaun" path="res://Assets/balanza 2.png" id="6_l0ql2"]
+[ext_resource type="AudioStream" uid="uid://ukwp71geclgj" path="res://Assets/sonidos/musica_inicio.mp3" id="7_wdq5s"]
+[ext_resource type="AudioStream" uid="uid://buiv72vm0va5b" path="res://Assets/sonidos/voz destino.mp3" id="8_iv4km"]
+[ext_resource type="FontFile" uid="uid://lcekj47gs3fk" path="res://Assets/fuente/Pixelta.ttf" id="9_i3fdt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jcqpt"]
+bg_color = Color(0.032967977, 0.032967996, 0.032967962, 0.6901961)
+
+[sub_resource type="Animation" id="Animation_concx"]
+resource_name = "Movimiento"
+length = 3.2
+loop_mode = 1
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pesa/techo:position")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 2,
+"values": [Vector2(602.25, 401.25), Vector2(593, 400), Vector2(602.25, 401.25), Vector2(607.6073, 400.6297), Vector2(602.25, 401.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pesa/techo:rotation")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 2,
+"values": [0.0, 0.08726646, 0.0, -0.04363323, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pesa/pesa1:position")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(603.25, 392.25), Vector2(604, 374), Vector2(603.25, 392.25), Vector2(603.6183, 397.28958), Vector2(603.25, 392.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Pesa/pesa2:position")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.6, 2.4, 3.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(956.99994, 389.99997), Vector2(956.99994, 405.99994), Vector2(956.99994, 389.99997), Vector2(956.99994, 382.8557), Vector2(956.99994, 389.99997)]
+}
+
+[sub_resource type="Animation" id="Animation_k6kuu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pesa/techo:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(602.25, 401.25)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pesa/techo:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pesa/pesa1:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(603.25, 392.25)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Pesa/pesa2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(956.99994, 389.99997)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ColorRect:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_2eeg7"]
+resource_name = "iniciar"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2eeg7"]
+_data = {
+&"Movimiento": SubResource("Animation_concx"),
+&"RESET": SubResource("Animation_k6kuu"),
+&"iniciar": SubResource("Animation_2eeg7")
+}
+
+[node name="AnimacionMasAlla" type="Node2D" unique_id=850766657]
+script = ExtResource("1_qrtqa")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1795674230]
+offset_right = 1154.0
+offset_bottom = 652.0
+stream = ExtResource("2_wlyy4")
+autoplay = true
+expand = true
+loop = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1832759775]
+position = Vector2(103, 516)
+
+[node name="Pesa" type="Node2D" parent="." unique_id=1793025489]
+
+[node name="pesa1" type="Sprite2D" parent="Pesa" unique_id=393501868]
+position = Vector2(603.25, 392.25)
+scale = Vector2(0.359, 0.359)
+texture = ExtResource("3_0jo3s")
+
+[node name="pesa2" type="Sprite2D" parent="Pesa" unique_id=193327875]
+position = Vector2(956.99994, 389.99997)
+scale = Vector2(0.359, 0.359)
+texture = ExtResource("4_u27j1")
+
+[node name="techo" type="Sprite2D" parent="Pesa" unique_id=1090128321]
+position = Vector2(602.25, 401.25)
+scale = Vector2(0.35900003, 0.35900003)
+texture = ExtResource("5_6bt1k")
+
+[node name="cuerpo" type="Sprite2D" parent="Pesa" unique_id=1805600885]
+position = Vector2(602.25, 385.25)
+scale = Vector2(0.359, 0.359)
+texture = ExtResource("6_l0ql2")
+
+[node name="MusicaMenu" type="AudioStreamPlayer" parent="." unique_id=269371890]
+stream = ExtResource("7_wdq5s")
+autoplay = true
+
+[node name="TextAudio" type="AudioStreamPlayer" parent="." unique_id=401172188]
+stream = ExtResource("8_iv4km")
+autoplay = true
+
+[node name="texto" type="Label" parent="." unique_id=472566543]
+offset_left = 103.0
+offset_top = 516.0
+offset_right = 1067.0
+offset_bottom = 627.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("9_i3fdt")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jcqpt")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1102750926]
+libraries/ = SubResource("AnimationLibrary_2eeg7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1710498927]
+offset_left = -36.0
+offset_top = -12.0
+offset_right = 1194.0
+offset_bottom = 666.0
+color = Color(0, 0, 0, 0)
