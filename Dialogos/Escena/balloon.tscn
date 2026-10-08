@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ckyhxl6st3vqi"]
 
-[ext_resource type="Script" uid="uid://ih1y1trun04d" path="res:///balloon.gd" id="1_36de5"]
+[ext_resource type="Script" uid="uid://na2jdwv6445d" path="res://Dialogos/Escena/balloon.gd" id="1_s03dk"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 
@@ -101,7 +101,7 @@ _data = {
 
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=1434168376]
 layer = 100
-script = ExtResource("1_36de5")
+script = ExtResource("1_s03dk")
 
 [node name="Balloon" type="Control" parent="." unique_id=359403728]
 unique_name_in_owner = true
@@ -132,6 +132,12 @@ mouse_filter = 1
 layout_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer" unique_id=1428277592]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Portrait" type="TextureRect" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1959514986]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=1624289611]
@@ -175,10 +181,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -290.5
-offset_top = -35.0
-offset_right = 290.5
-offset_bottom = 35.0
+offset_left = -38.0
+offset_top = 10.0
+offset_right = 543.0
+offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
