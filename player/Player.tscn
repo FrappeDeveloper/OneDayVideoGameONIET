@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bseg28ecfep3q"]
+
+[ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="1_3c3w1"]
+[ext_resource type="Script" uid="uid://cg1yyekgj4te1" path="res://player/States/idle.gd" id="2_wnvi2"]
+
+[node name="Player" type="CharacterBody2D" unique_id=2036406556]
+
+[node name="State_machine" type="Node" parent="." unique_id=613558542]
+script = ExtResource("1_3c3w1")
+metadata/_custom_type_script = "uid://brb28eoow43ng"
+
+[node name="Idle" type="Node" parent="State_machine" unique_id=1574407381]
+script = ExtResource("2_wnvi2")
