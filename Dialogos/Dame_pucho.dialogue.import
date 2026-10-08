@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bu6y17okny7lu"
+path="res://.godot/imported/Dame_pucho.dialogue-e6faaaae7c2bd49b1954a717c7461819.tres"
+
+[deps]
+
+source_file="res://Dialogos/Dame_pucho.dialogue"
+dest_files=["res://.godot/imported/Dame_pucho.dialogue-e6faaaae7c2bd49b1954a717c7461819.tres"]
+
+[params]
+
+defaults=true
