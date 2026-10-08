@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://633jt0yu1c6q"
-path="res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"
+uid="uid://bk61eeldcr43x"
+path="res://.godot/imported/policia basic.png-7374171867d01c9dc53dfc07b923eae0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza der.png"
-dest_files=["res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"]
+source_file="res://Assets/policia basic.png"
+dest_files=["res://.godot/imported/policia basic.png-7374171867d01c9dc53dfc07b923eae0.ctex"]
 
 [params]
 

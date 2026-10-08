@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://633jt0yu1c6q"
-path="res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"
+uid="uid://ocee76kvjyoi"
+path="res://.godot/imported/balanza completa.png-6588f11922359fa88c427b036e7aa9ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/balanza der.png"
-dest_files=["res://.godot/imported/balanza der.png-e3b2ccb1e299cb8ef408dd14e08992aa.ctex"]
+source_file="res://Assets/balanza completa.png"
+dest_files=["res://.godot/imported/balanza completa.png-6588f11922359fa88c427b036e7aa9ee.ctex"]
 
 [params]
 
