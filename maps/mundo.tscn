@@ -1,13 +1,27 @@
 [gd_scene format=3 uid="uid://mwp3qnpixnmc"]
 
 [ext_resource type="PackedScene" uid="uid://d1720ulfq6x7u" path="res://maps/ciudad.tscn" id="1_6uj53"]
+[ext_resource type="Texture2D" uid="uid://cfmterofojwoq" path="res://Assets/fondo ciudad.png" id="1_rwl01"]
 [ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="2_g0c2r"]
 [ext_resource type="PackedScene" uid="uid://dsen8spujrx3b" path="res://NPC/BaseNPC/Fisura/Fisura.tscn" id="3_j0rc6"]
 [ext_resource type="PackedScene" uid="uid://ch60okqqddxu3" path="res://objets/weaponds/Bat.tscn" id="4_yty1c"]
 [ext_resource type="PackedScene" uid="uid://blxwrlj70qa6b" path="res://NPC/BaseNPC/bieja/vieja.tscn" id="5_dkdk5"]
 [ext_resource type="PackedScene" uid="uid://dk4ij0ho2b7ja" path="res://NPC/BaseNPC/nena/nena.tscn" id="6_m62g2"]
+[ext_resource type="PackedScene" uid="uid://crj3skk16qfro" path="res://NPC/BaseNPC/emo/emo.tscn" id="7_4ba3h"]
 
 [node name="Mundo" type="Node2D" unique_id=2070645401]
+
+[node name="FondoCiudad" type="Sprite2D" parent="." unique_id=631884704]
+position = Vector2(2376, -225)
+texture = ExtResource("1_rwl01")
+
+[node name="FondoCiudad2" type="Sprite2D" parent="." unique_id=711449648]
+position = Vector2(-113, -232)
+texture = ExtResource("1_rwl01")
+
+[node name="FondoCiudad3" type="Sprite2D" parent="." unique_id=1101680648]
+position = Vector2(-113, -232)
+texture = ExtResource("1_rwl01")
 
 [node name="Ciudad" parent="." unique_id=174053674 instance=ExtResource("1_6uj53")]
 position = Vector2(25, 300)
@@ -38,6 +52,12 @@ position = Vector2(1153, 231)
 [node name="Marker2D6" type="Marker2D" parent="WayPoints" unique_id=478918079]
 position = Vector2(1550, 238)
 
+[node name="Marker2D7" type="Marker2D" parent="WayPoints" unique_id=912229416]
+position = Vector2(2178, 233)
+
+[node name="Marker2D8" type="Marker2D" parent="WayPoints" unique_id=463123604]
+position = Vector2(1734, 238)
+
 [node name="Fisura" parent="." unique_id=635213196 node_paths=PackedStringArray("waypoints") instance=ExtResource("3_j0rc6")]
 position = Vector2(-758, 263)
 scale = Vector2(0.6, 0.64)
@@ -53,8 +73,11 @@ live = 15.0
 waypoints = [NodePath("../WayPoints/Marker2D3"), NodePath("../WayPoints/Marker2D4")]
 speed = 100.0
 
-[node name="BaseNPC" parent="." unique_id=1944027967 node_paths=PackedStringArray("waypoints") instance=ExtResource("6_m62g2")]
+[node name="Nena" parent="." unique_id=1944027967 node_paths=PackedStringArray("waypoints") instance=ExtResource("6_m62g2")]
 position = Vector2(1170, 238)
 live = 10.0
 waypoints = [NodePath("../WayPoints/Marker2D5"), NodePath("../WayPoints/Marker2D6")]
 speed = 100.0
+
+[node name="emo" parent="." unique_id=1761974071 instance=ExtResource("7_4ba3h")]
+position = Vector2(1882, 229)
