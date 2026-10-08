@@ -19,6 +19,7 @@ radius = 38.013157
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gskgj"]
 
 [node name="Player" type="CharacterBody2D" unique_id=2036406556]
+collision_layer = 2
 script = ExtResource("1_aqcbf")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1744656125]
@@ -27,8 +28,8 @@ offset_top = -10.0
 offset_right = 8.0
 offset_bottom = 10.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect" unique_id=1512914846]
-position = Vector2(8, 11.5)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1512914846]
+position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_x8kxw")
 
 [node name="State_machine" type="Node" parent="." unique_id=613558542 node_paths=PackedStringArray("default_state")]
@@ -48,27 +49,26 @@ script = ExtResource("4_aqcbf")
 [node name="Fall" type="Node" parent="State_machine" unique_id=941203635]
 script = ExtResource("5_gskgj")
 
-[node name="State_machine2" type="Node" parent="." unique_id=196734870 node_paths=PackedStringArray("default_state")]
+[node name="Attack_State_machine" type="Node" parent="." unique_id=196734870 node_paths=PackedStringArray("default_state")]
 script = ExtResource("1_3c3w1")
 default_state = NodePath("Idle")
 metadata/_custom_type_script = "uid://brb28eoow43ng"
 
-[node name="Idle" type="Node" parent="State_machine2" unique_id=1009654150]
+[node name="Idle" type="Node" parent="Attack_State_machine" unique_id=1009654150]
 script = ExtResource("2_wnvi2")
 
-[node name="Move" type="Node" parent="State_machine2" unique_id=1297039397]
+[node name="Attack" type="Node" parent="Attack_State_machine" unique_id=1297039397]
 script = ExtResource("3_x8kxw")
 
-[node name="Jump" type="Node" parent="State_machine2" unique_id=1584577232]
+[node name="Jump" type="Node" parent="Attack_State_machine" unique_id=1584577232]
 script = ExtResource("4_aqcbf")
 
-[node name="Fall" type="Node" parent="State_machine2" unique_id=582762118]
+[node name="Fall" type="Node" parent="Attack_State_machine" unique_id=582762118]
 script = ExtResource("5_gskgj")
 
 [node name="hitbox" type="Area2D" parent="." unique_id=421690629]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=1861402453]
-position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_aqcbf")
 
 [node name="interactue_box" type="Area2D" parent="." unique_id=44202251]
