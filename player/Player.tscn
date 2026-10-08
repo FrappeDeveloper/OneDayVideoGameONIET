@@ -1,13 +1,40 @@
 [gd_scene format=3 uid="uid://bseg28ecfep3q"]
 
 [ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="1_3c3w1"]
+[ext_resource type="Script" uid="uid://f02316nx8y3x" path="res://player/player.gd" id="1_aqcbf"]
 [ext_resource type="Script" uid="uid://cg1yyekgj4te1" path="res://player/States/idle.gd" id="2_wnvi2"]
+[ext_resource type="Script" uid="uid://bbik2f55vqmsn" path="res://player/States/move.gd" id="3_x8kxw"]
+[ext_resource type="Script" uid="uid://c46fkkjuflxnc" path="res://player/States/jump.gd" id="4_aqcbf"]
+[ext_resource type="Script" uid="uid://coasgwujeaqfn" path="res://player/States/fall.gd" id="5_gskgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x8kxw"]
+size = Vector2(16, 20)
 
 [node name="Player" type="CharacterBody2D" unique_id=2036406556]
+script = ExtResource("1_aqcbf")
 
-[node name="State_machine" type="Node" parent="." unique_id=613558542]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1512914846]
+shape = SubResource("RectangleShape2D_x8kxw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1744656125]
+offset_left = -8.0
+offset_top = -10.0
+offset_right = 8.0
+offset_bottom = 10.0
+
+[node name="State_machine" type="Node" parent="." unique_id=613558542 node_paths=PackedStringArray("default_state")]
 script = ExtResource("1_3c3w1")
+default_state = NodePath("Idle")
 metadata/_custom_type_script = "uid://brb28eoow43ng"
 
 [node name="Idle" type="Node" parent="State_machine" unique_id=1574407381]
 script = ExtResource("2_wnvi2")
+
+[node name="Move" type="Node" parent="State_machine" unique_id=738291759]
+script = ExtResource("3_x8kxw")
+
+[node name="Jump" type="Node" parent="State_machine" unique_id=2031388615]
+script = ExtResource("4_aqcbf")
+
+[node name="Fall" type="Node" parent="State_machine" unique_id=941203635]
+script = ExtResource("5_gskgj")

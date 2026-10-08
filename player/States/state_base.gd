@@ -2,8 +2,11 @@ extends Node
 class_name State
 
 var control_node
+var state_machine
 
-# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	state_machine=get_parent()
+
 func start() -> void:
 	pass # Replace with function body.
 
