@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://6e1negb04ie1"
+path="res://.godot/imported/Niña(q perdio gato).dialogue-9cd842fa0fd6c4de8445f27f2e57ac14.tres"
+
+[deps]
+
+source_file="res://Dialogos/Niña(q perdio gato).dialogue"
+dest_files=["res://.godot/imported/Niña(q perdio gato).dialogue-9cd842fa0fd6c4de8445f27f2e57ac14.tres"]
+
+[params]
+
+defaults=true
