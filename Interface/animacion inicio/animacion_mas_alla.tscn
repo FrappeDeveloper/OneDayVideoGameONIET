@@ -1,30 +1,29 @@
-[gd_scene load_steps=19 format=3 uid="uid://byay21x5cf57i"]
+[gd_scene load_steps=18 format=3 uid="uid://b1e0hqx3rj27t"]
 
-[ext_resource type="Script" uid="uid://bsu7p4mtlbdcy" path="res://Interface/menu/menu.gd" id="1_virqb"]
-[ext_resource type="Texture2D" uid="uid://dkb7mf7w8i3me" path="res://Assets/balanza der.png" id="2_fi786"]
-[ext_resource type="Texture2D" uid="uid://cuahiewgrrde6" path="res://Assets/balanza 3.png" id="2_stvs5"]
-[ext_resource type="Texture2D" uid="uid://0orfc5wcaun" path="res://Assets/balanza 2.png" id="3_fi786"]
-[ext_resource type="Texture2D" uid="uid://bo2b0qqdu3goj" path="res://Assets/sonidos/balanza izq.png" id="3_ufnpm"]
-[ext_resource type="FontFile" uid="uid://btl0bu5b8j4yg" path="res://Assets/fuente/Moderno.ttf" id="6_ufnpm"]
-[ext_resource type="VideoStream" uid="uid://balxgihvh8syx" path="res://Assets/Star scene - Free M.G Stock Footage.ogv" id="7_concx"]
-[ext_resource type="AudioStream" uid="uid://ukwp71geclgj" path="res://Assets/sonidos/musica_inicio.mp3" id="8_k6kuu"]
+[ext_resource type="VideoStream" uid="uid://balxgihvh8syx" path="res://Assets/Star scene - Free M.G Stock Footage.ogv" id="1_wmue1"]
+[ext_resource type="Texture2D" uid="uid://dkb7mf7w8i3me" path="res://Assets/balanza der.png" id="2_t10gf"]
+[ext_resource type="Texture2D" uid="uid://bo2b0qqdu3goj" path="res://Assets/sonidos/balanza izq.png" id="3_i6kjb"]
+[ext_resource type="Texture2D" uid="uid://cuahiewgrrde6" path="res://Assets/balanza 3.png" id="4_jcqpt"]
+[ext_resource type="Texture2D" uid="uid://0orfc5wcaun" path="res://Assets/balanza 2.png" id="5_d83js"]
+[ext_resource type="FontFile" uid="uid://btl0bu5b8j4yg" path="res://Assets/fuente/Moderno.ttf" id="6_vmcbq"]
+[ext_resource type="AudioStream" uid="uid://ukwp71geclgj" path="res://Assets/sonidos/musica_inicio.mp3" id="7_g5om1"]
 
-[sub_resource type="Theme" id="Theme_concx"]
-default_font = ExtResource("6_ufnpm")
+[sub_resource type="Theme" id="Theme_g8w4i"]
+default_font = ExtResource("6_vmcbq")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k6kuu"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_71255"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xh17m"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dn6yn"]
 bg_color = Color(1, 1, 1, 1)
 
-[sub_resource type="Theme" id="Theme_k6kuu"]
-default_font = ExtResource("6_ufnpm")
+[sub_resource type="Theme" id="Theme_23bko"]
+default_font = ExtResource("6_vmcbq")
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2eeg7"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4fef7"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_concx"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xh7eu"]
 bg_color = Color(0, 0, 0, 1)
 corner_detail = 20
 
@@ -215,74 +214,74 @@ _data = {
 &"iniciar": SubResource("Animation_2eeg7")
 }
 
-[node name="Menu" type="CanvasLayer" unique_id=1951492679]
-script = ExtResource("1_virqb")
+[node name="AnimacionMasAlla" type="Node2D" unique_id=850766657]
 
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1126106511]
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1795674230]
 offset_right = 1154.0
 offset_bottom = 652.0
-stream = ExtResource("7_concx")
+stream = ExtResource("1_wmue1")
 autoplay = true
 expand = true
 loop = true
 
-[node name="pesa1" type="Sprite2D" parent="." unique_id=580033868]
+[node name="Label" type="Label" parent="." unique_id=472566543]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="pesa1" type="Sprite2D" parent="." unique_id=393501868]
 position = Vector2(603.25, 392.25)
 scale = Vector2(0.359, 0.359)
-texture = ExtResource("2_fi786")
+texture = ExtResource("2_t10gf")
 
-[node name="pesa2" type="Sprite2D" parent="." unique_id=177679385]
+[node name="pesa2" type="Sprite2D" parent="." unique_id=193327875]
 position = Vector2(956.99994, 389.99997)
 scale = Vector2(0.359, 0.359)
-texture = ExtResource("3_ufnpm")
+texture = ExtResource("3_i6kjb")
 
-[node name="techo" type="Sprite2D" parent="." unique_id=1805876593]
+[node name="techo" type="Sprite2D" parent="." unique_id=1090128321]
 position = Vector2(602.25, 401.25)
 scale = Vector2(0.35900003, 0.35900003)
-texture = ExtResource("2_stvs5")
+texture = ExtResource("4_jcqpt")
 
-[node name="cuerpo" type="Sprite2D" parent="." unique_id=1630212767]
+[node name="cuerpo" type="Sprite2D" parent="." unique_id=1805600885]
 position = Vector2(602.25, 385.25)
 scale = Vector2(0.359, 0.359)
-texture = ExtResource("3_fi786")
+texture = ExtResource("5_d83js")
 
-[node name="iniciar" type="Button" parent="." unique_id=485113221]
+[node name="iniciar" type="Button" parent="." unique_id=1920622934]
 offset_left = 736.99994
 offset_top = 462.0
 offset_right = 797.99994
 offset_bottom = 493.0
 scale = Vector2(1.52, 1.52)
-theme = SubResource("Theme_concx")
-theme_override_styles/normal = SubResource("StyleBoxFlat_k6kuu")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_xh17m")
+theme = SubResource("Theme_g8w4i")
+theme_override_styles/normal = SubResource("StyleBoxFlat_71255")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dn6yn")
 text = "Iniciar"
 
-[node name="salir" type="Button" parent="." unique_id=425449019]
+[node name="salir" type="Button" parent="." unique_id=492318163]
 offset_left = 382.9999
 offset_top = 466.0
 offset_right = 439.9999
 offset_bottom = 497.0
 scale = Vector2(1.52, 1.52)
-theme = SubResource("Theme_k6kuu")
-theme_override_styles/normal = SubResource("StyleBoxFlat_2eeg7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_concx")
+theme = SubResource("Theme_23bko")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4fef7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xh7eu")
 text = "Salir"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=685281180]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1710498927]
 offset_left = -36.0
 offset_top = -12.0
 offset_right = 1194.0
 offset_bottom = 666.0
 color = Color(0, 0, 0, 0)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1255669083]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1329002978]
 libraries = {
 &"": SubResource("AnimationLibrary_2eeg7")
 }
 
-[node name="MusicaMenu" type="AudioStreamPlayer2D" parent="." unique_id=1233999290]
-stream = ExtResource("8_k6kuu")
+[node name="MusicaMenu" type="AudioStreamPlayer2D" parent="." unique_id=1580016179]
+stream = ExtResource("7_g5om1")
 autoplay = true
-
-[connection signal="pressed" from="iniciar" to="." method="_on_iniciar_pressed"]
-[connection signal="pressed" from="salir" to="." method="_on_salir_pressed"]
