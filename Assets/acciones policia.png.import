@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://btfv4ofag8t4x"
+=======
+uid="uid://b251lguakoiuv"
+>>>>>>> 1e764116da121305140cb808a52e62c0a6bf154f
 path="res://.godot/imported/acciones policia.png-d6df900f9e781845de41ad5fc73ef9fd.ctex"
 metadata={
 "vram_texture": false
