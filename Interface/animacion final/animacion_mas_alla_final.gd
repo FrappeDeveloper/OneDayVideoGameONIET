@@ -33,7 +33,8 @@ func _physics_process(delta: float):
 		await esperar_y_desaparecer(4.0)
 		if GameManager.puntos_buenos<GameManager.puntos_malos:
 			final_malo()
-
+		elif GameManager.puntos_buenos<=GameManager.puntos_malos/2:
+			final_neutro()
 		else:
 			final_bueno()
 			
