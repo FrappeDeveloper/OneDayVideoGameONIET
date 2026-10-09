@@ -12,23 +12,42 @@
 [ext_resource type="PackedScene" uid="uid://crj3skk16qfro" path="res://NPC/BaseNPC/emo/emo.tscn" id="7_4ba3h"]
 [ext_resource type="PackedScene" uid="uid://d23fnixip4c73" path="res://NPC/BaseNPC/Nene/nene.tscn" id="9_os6ek"]
 [ext_resource type="PackedScene" uid="uid://bdade0steh535" path="res://NPC/BaseNPC/base_npc.tscn" id="10_fifkf"]
+[ext_resource type="PackedScene" uid="uid://c74tr4154y5vv" path="res://objets/weaponds/lentes.tscn" id="13_78ggv"]
+[ext_resource type="PackedScene" uid="uid://cywajrv5adktf" path="res://objets/weaponds/Gato.tscn" id="14_qjdsm"]
+[ext_resource type="PackedScene" uid="uid://bqwalrn4fxuke" path="res://objets/weaponds/Pucho.tscn" id="15_5038u"]
 
 [node name="Mundo" type="Node2D" unique_id=2070645401]
 
 [node name="Timer" type="Timer" parent="." unique_id=324217580]
-wait_time = 60.0
+wait_time = 80.0
 autostart = true
 
 [node name="FondoCiudad" type="Sprite2D" parent="." unique_id=631884704]
-position = Vector2(2267, -72)
+position = Vector2(3025.6648, 96)
+scale = Vector2(0.44186813, 0.40613633)
 texture = ExtResource("1_rwl01")
+flip_h = true
 
 [node name="FondoCiudad2" type="Sprite2D" parent="." unique_id=711449648]
-position = Vector2(-113, -232)
+position = Vector2(841.00006, 107)
+scale = Vector2(0.4127273, 0.41272727)
 texture = ExtResource("1_rwl01")
+flip_h = true
+
+[node name="FondoCiudad2" type="Sprite2D" parent="FondoCiudad2" unique_id=556641832]
+position = Vector2(-3421.1458, 21.012093)
+scale = Vector2(0.7768482, 0.84437126)
+texture = ExtResource("1_rwl01")
+flip_h = true
 
 [node name="FondoCiudad3" type="Sprite2D" parent="." unique_id=1101680648]
-position = Vector2(-55, -67)
+position = Vector2(1913.0001, 58.000008)
+scale = Vector2(0.49667266, 0.44590908)
+texture = ExtResource("1_rwl01")
+
+[node name="FondoCiudad3" type="Sprite2D" parent="FondoCiudad3" unique_id=1812111543]
+position = Vector2(-4099.2793, 106.16473)
+scale = Vector2(0.8024193, 0.86580956)
 texture = ExtResource("1_rwl01")
 
 [node name="Ciudad" parent="." unique_id=174053674 instance=ExtResource("1_6uj53")]
@@ -39,6 +58,8 @@ layer_0/tile_data = PackedInt32Array(655406, 131072, 3, 589870, 131072, 3, 52433
 position = Vector2(-501, 242)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=891461362]
+offset = Vector2(20, -20)
+zoom = Vector2(2, 2)
 
 [node name="WayPoints" type="Node2D" parent="." unique_id=1550973697]
 
@@ -121,8 +142,8 @@ waypoints = [NodePath("../WayPoints/Marker2D9"), NodePath("../WayPoints/Marker2D
 speed = 100.0
 
 [node name="Poli" parent="." unique_id=1466712671 node_paths=PackedStringArray("waypoints") instance=ExtResource("10_fifkf")]
-position = Vector2(2180, 221)
-scale = Vector2(0.57320005, 0.79310447)
+position = Vector2(2180, 218)
+scale = Vector2(0.9, 0.793)
 live = 25.0
 waypoints = [NodePath("../WayPoints/Marker2D11"), NodePath("../WayPoints/Marker2D12")]
 speed = 130.0
@@ -132,5 +153,14 @@ position = Vector2(2620, 221)
 live = 15.0
 waypoints = [NodePath("../WayPoints/Marker2D13"), NodePath("../WayPoints/Marker2D14")]
 speed = 70.0
+
+[node name="Lentes" parent="." unique_id=583762041 instance=ExtResource("13_78ggv")]
+position = Vector2(1366, 251)
+
+[node name="Gato" parent="." unique_id=1069483627 instance=ExtResource("14_qjdsm")]
+position = Vector2(649, 245)
+
+[node name="Pucho" parent="." unique_id=1704363741 instance=ExtResource("15_5038u")]
+position = Vector2(3324, 248)
 
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]

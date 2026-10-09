@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c74tr4154y5vv"]
+
+[ext_resource type="Script" uid="uid://b7p6b67u56oh" path="res://objets/weaponds/lentes.gd" id="1_qqkps"]
+[ext_resource type="Texture2D" uid="uid://pkpn4jov0wru" path="res://Assets/objetos y e.png" id="2_vh4rp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_41x68"]
+radius = 72.0
+
+[node name="Bat" type="Area2D" unique_id=702910082]
+collision_layer = 0
+collision_mask = 8
+script = ExtResource("1_qqkps")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=850723010]
+shape = SubResource("CircleShape2D_41x68")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=660101928]
+texture = ExtResource("2_vh4rp")
+region_enabled = true
+region_rect = Rect2(0.77326584, 0.6282449, 31.599743, 30.16339)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
