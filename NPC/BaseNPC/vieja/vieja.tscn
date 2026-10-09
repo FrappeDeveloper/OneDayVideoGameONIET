@@ -1,31 +1,31 @@
-[gd_scene format=3 uid="uid://crj3skk16qfro"]
+[gd_scene format=3 uid="uid://blxwrlj70qa6b"]
 
-[ext_resource type="Script" uid="uid://dyvs5s5geo66q" path="res://NPC/BaseNPC/emo/emo.gd" id="1_he85d"]
-[ext_resource type="Texture2D" uid="uid://c5tdhn33e6f5m" path="res://Assets/npcl.png" id="2_he85d"]
-[ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="3_io7tb"]
-[ext_resource type="Script" uid="uid://c30mlg47ul06f" path="res://NPC/BaseNPC/states/idle.gd" id="4_6r1hu"]
-[ext_resource type="Script" uid="uid://bo5bgs8dhhgb1" path="res://NPC/BaseNPC/states/talk.gd" id="5_amid4"]
-[ext_resource type="Script" uid="uid://b6oe5onfmeipt" path="res://NPC/BaseNPC/states/knockback.gd" id="6_tou58"]
-[ext_resource type="Script" uid="uid://fp321fhryknq" path="res://NPC/BaseNPC/states/scape.gd" id="7_10lq6"]
-[ext_resource type="Script" uid="uid://bfgp1ce3vu8l7" path="res://NPC/BaseNPC/dead.gd" id="8_g8kxe"]
-[ext_resource type="Texture2D" uid="uid://pkpn4jov0wru" path="res://Assets/objetos y e.png" id="9_he85d"]
+[ext_resource type="Script" uid="uid://c5bolbr35sdab" path="res://NPC/BaseNPC/vieja/vieja.gd" id="1_foict"]
+[ext_resource type="Texture2D" uid="uid://c5tdhn33e6f5m" path="res://Assets/npcl.png" id="2_6rgq0"]
+[ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="3_qa10a"]
+[ext_resource type="Script" uid="uid://c30mlg47ul06f" path="res://NPC/BaseNPC/states/idle.gd" id="4_4vbu1"]
+[ext_resource type="Script" uid="uid://bo5bgs8dhhgb1" path="res://NPC/BaseNPC/states/talk.gd" id="5_v67jg"]
+[ext_resource type="Script" uid="uid://b6oe5onfmeipt" path="res://NPC/BaseNPC/states/knockback.gd" id="6_0pqk7"]
+[ext_resource type="Script" uid="uid://fp321fhryknq" path="res://NPC/BaseNPC/states/scape.gd" id="7_nuxne"]
+[ext_resource type="Script" uid="uid://bfgp1ce3vu8l7" path="res://NPC/BaseNPC/dead.gd" id="8_klfa7"]
+[ext_resource type="Texture2D" uid="uid://pkpn4jov0wru" path="res://Assets/objetos y e.png" id="9_bjvq6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4fj7k"]
-atlas = ExtResource("2_he85d")
-region = Rect2(128, 0, 64, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_7bw4v"]
+atlas = ExtResource("2_6rgq0")
+region = Rect2(192, 96, 64, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_psy64"]
-atlas = ExtResource("2_he85d")
-region = Rect2(192, 0, 64, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpo0i"]
+atlas = ExtResource("2_6rgq0")
+region = Rect2(256, 96, 64, 96)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_fty6n"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_2owaj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4fj7k")
+"texture": SubResource("AtlasTexture_7bw4v")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_psy64")
+"texture": SubResource("AtlasTexture_qpo0i")
 }],
 "loop": true,
 "name": &"default",
@@ -40,15 +40,15 @@ height = 112.0
 size = Vector2(124, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ev3w5"]
-size = Vector2(126, 127)
+size = Vector2(188, 127)
 
 [node name="BaseNPC" type="CharacterBody2D" unique_id=635213196]
 collision_layer = 0
 collision_mask = 0
-script = ExtResource("1_he85d")
+script = ExtResource("1_foict")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=579342835]
-sprite_frames = SubResource("SpriteFrames_fty6n")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1432168607]
+sprite_frames = SubResource("SpriteFrames_2owaj")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=707675974]
@@ -73,32 +73,31 @@ position = Vector2(1, -0.5)
 shape = SubResource("RectangleShape2D_ev3w5")
 
 [node name="State_machine" type="Node" parent="." unique_id=205093645 node_paths=PackedStringArray("default_state")]
-script = ExtResource("3_io7tb")
+script = ExtResource("3_qa10a")
 default_state = NodePath("Idle")
 metadata/_custom_type_script = "uid://brb28eoow43ng"
 
 [node name="Idle" type="Node" parent="State_machine" unique_id=322909523]
-script = ExtResource("4_6r1hu")
+script = ExtResource("4_4vbu1")
 
 [node name="Talk" type="Node" parent="State_machine" unique_id=537215656]
-script = ExtResource("5_amid4")
+script = ExtResource("5_v67jg")
 
 [node name="Knockback" type="Node" parent="State_machine" unique_id=2003794223]
-script = ExtResource("6_tou58")
+script = ExtResource("6_0pqk7")
 
 [node name="Scape" type="Node" parent="State_machine" unique_id=36712939]
-script = ExtResource("7_10lq6")
+script = ExtResource("7_nuxne")
 
 [node name="Dead" type="Node" parent="State_machine" unique_id=900297726]
-script = ExtResource("8_g8kxe")
+script = ExtResource("8_klfa7")
 
-[node name="Exclamation" type="Sprite2D" parent="." unique_id=1176172443]
-visible = false
-position = Vector2(2.0000002, -66)
-scale = Vector2(0.50529236, 0.6210934)
-texture = ExtResource("9_he85d")
+[node name="Exclamation" type="Sprite2D" parent="." unique_id=170239278]
+position = Vector2(0, -50)
+scale = Vector2(0.53421336, 0.6341987)
+texture = ExtResource("9_bjvq6")
 region_enabled = true
-region_rect = Rect2(0, 63.56609, 31.315796, 32.43391)
+region_rect = Rect2(0, 64.93451, 29.60527, 31.06549)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]

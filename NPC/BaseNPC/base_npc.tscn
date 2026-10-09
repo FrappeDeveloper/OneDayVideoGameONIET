@@ -1,13 +1,50 @@
 [gd_scene format=3 uid="uid://bdade0steh535"]
 
 [ext_resource type="Script" uid="uid://ddtuesvagna30" path="res://NPC/BaseNPC/base_npc.gd" id="1_ev3w5"]
-[ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="1_vi26n"]
+[ext_resource type="Texture2D" uid="uid://1bqr61et1fpb" path="res://Assets/policia basic.png" id="2_do4ko"]
 [ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="3_07qqk"]
+[ext_resource type="Texture2D" uid="uid://pkpn4jov0wru" path="res://Assets/objetos y e.png" id="3_flxj6"]
 [ext_resource type="Script" uid="uid://c30mlg47ul06f" path="res://NPC/BaseNPC/states/idle.gd" id="4_mayx1"]
 [ext_resource type="Script" uid="uid://bo5bgs8dhhgb1" path="res://NPC/BaseNPC/states/talk.gd" id="5_mayx1"]
 [ext_resource type="Script" uid="uid://b6oe5onfmeipt" path="res://NPC/BaseNPC/states/knockback.gd" id="6_4r1pq"]
 [ext_resource type="Script" uid="uid://fp321fhryknq" path="res://NPC/BaseNPC/states/scape.gd" id="7_uqoam"]
 [ext_resource type="Script" uid="uid://bfgp1ce3vu8l7" path="res://NPC/BaseNPC/dead.gd" id="8_do4ko"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljqbd"]
+atlas = ExtResource("2_do4ko")
+region = Rect2(0, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60dsw"]
+atlas = ExtResource("2_do4ko")
+region = Rect2(64, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmy5t"]
+atlas = ExtResource("2_do4ko")
+region = Rect2(128, 0, 64, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogwjw"]
+atlas = ExtResource("2_do4ko")
+region = Rect2(192, 0, 64, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hmido"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljqbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60dsw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nmy5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogwjw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ev3w5"]
 radius = 30.0
@@ -17,15 +54,18 @@ height = 112.0
 size = Vector2(124, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ev3w5"]
-size = Vector2(389, 127)
+size = Vector2(133, 127)
 
 [node name="BaseNPC" type="CharacterBody2D" unique_id=635213196]
 collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_ev3w5")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=663468098]
-texture = ExtResource("1_vi26n")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1832188055]
+position = Vector2(7.5, 14)
+scale = Vector2(1.234375, 1.2916666)
+sprite_frames = SubResource("SpriteFrames_hmido")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=707675974]
 shape = SubResource("CapsuleShape2D_ev3w5")
@@ -45,14 +85,16 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area_dialogo" unique_id=1552063193]
-position = Vector2(-2.5, -0.5)
+position = Vector2(1.5, -1)
 shape = SubResource("RectangleShape2D_ev3w5")
 
 [node name="Exclamation" type="Sprite2D" parent="." unique_id=424008784]
 visible = false
-position = Vector2(-1, -101.99999)
-scale = Vector2(0.171875, 0.4296875)
-texture = ExtResource("1_vi26n")
+position = Vector2(0, -69)
+scale = Vector2(0.9192709, 0.9148435)
+texture = ExtResource("3_flxj6")
+region_enabled = true
+region_rect = Rect2(0.23686981, 65.078964, 30.10527, 30.921036)
 
 [node name="State_machine" type="Node" parent="." unique_id=205093645 node_paths=PackedStringArray("default_state")]
 script = ExtResource("3_07qqk")

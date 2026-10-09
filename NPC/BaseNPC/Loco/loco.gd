@@ -12,7 +12,7 @@ extends CharacterBody2D
 var current_index = 0
 var is_waiting = false
 var is_player_close = false
-var my_dialogue = preload("uid://du2jsr66c6eaf")
+var my_dialogue = preload("uid://cstoqn8tfo3oj")
 
 var player
 

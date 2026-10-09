@@ -3,12 +3,12 @@
 	~ dialogo
 	Niña: Oficial, se a escapado el señor bola de pelo [wait=1], ¿me ayudarias a encontrarlo?
 - Dar Objeto
-	if GameManager.current_weapond.name == "Gato"
+	if GameManager.current_weapond == null
+		Niña: Ayudeme a buscarlo señor
+	elif GameManager.current_weapond.name == "Gato"
 		Niña: [wave] ¡¡Señor bola de pelo!! [/wave][wait=1], muchas gracias oficial
 		do GameManager.entregar_objeto()
 		do GameManager.increment_puntos_buenos(10)
-	elif GameManager.current_weapond.name == null
-		=> dialogo
 	else
 		Niña: Eso no es el señor bola de pelo
 		* La ñiña tira el objeto {{GameManager.current_wepoind.name}} a la basura *

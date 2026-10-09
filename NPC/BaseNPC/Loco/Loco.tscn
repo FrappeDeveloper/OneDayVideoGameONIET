@@ -1,31 +1,31 @@
-[gd_scene format=3 uid="uid://blxwrlj70qa6b"]
+[gd_scene format=3 uid="uid://bud1ejk3lb6s4"]
 
-[ext_resource type="Script" uid="uid://c5bolbr35sdab" path="res://NPC/BaseNPC/bieja/vieja.gd" id="1_foict"]
-[ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="2_0sfq7"]
-[ext_resource type="Texture2D" uid="uid://c5tdhn33e6f5m" path="res://Assets/npcl.png" id="2_6rgq0"]
-[ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="3_qa10a"]
-[ext_resource type="Script" uid="uid://c30mlg47ul06f" path="res://NPC/BaseNPC/states/idle.gd" id="4_4vbu1"]
-[ext_resource type="Script" uid="uid://bo5bgs8dhhgb1" path="res://NPC/BaseNPC/states/talk.gd" id="5_v67jg"]
-[ext_resource type="Script" uid="uid://b6oe5onfmeipt" path="res://NPC/BaseNPC/states/knockback.gd" id="6_0pqk7"]
-[ext_resource type="Script" uid="uid://fp321fhryknq" path="res://NPC/BaseNPC/states/scape.gd" id="7_nuxne"]
-[ext_resource type="Script" uid="uid://bfgp1ce3vu8l7" path="res://NPC/BaseNPC/dead.gd" id="8_klfa7"]
+[ext_resource type="Script" uid="uid://cg6sww8x3qyr4" path="res://NPC/BaseNPC/Loco/loco.gd" id="1_0yyb3"]
+[ext_resource type="Texture2D" uid="uid://c5tdhn33e6f5m" path="res://Assets/npcl.png" id="2_0yyb3"]
+[ext_resource type="Texture2D" uid="uid://pkpn4jov0wru" path="res://Assets/objetos y e.png" id="3_3rc3r"]
+[ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="4_c5h2q"]
+[ext_resource type="Script" uid="uid://c30mlg47ul06f" path="res://NPC/BaseNPC/states/idle.gd" id="5_s8f14"]
+[ext_resource type="Script" uid="uid://bo5bgs8dhhgb1" path="res://NPC/BaseNPC/states/talk.gd" id="6_uuj41"]
+[ext_resource type="Script" uid="uid://b6oe5onfmeipt" path="res://NPC/BaseNPC/states/knockback.gd" id="7_7rjj3"]
+[ext_resource type="Script" uid="uid://fp321fhryknq" path="res://NPC/BaseNPC/states/scape.gd" id="8_rsn3f"]
+[ext_resource type="Script" uid="uid://bfgp1ce3vu8l7" path="res://NPC/BaseNPC/dead.gd" id="9_f24dg"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7bw4v"]
-atlas = ExtResource("2_6rgq0")
-region = Rect2(192, 96, 64, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwv4e"]
+atlas = ExtResource("2_0yyb3")
+region = Rect2(128, 192, 64, 96)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qpo0i"]
-atlas = ExtResource("2_6rgq0")
-region = Rect2(256, 96, 64, 96)
+[sub_resource type="AtlasTexture" id="AtlasTexture_yi4uy"]
+atlas = ExtResource("2_0yyb3")
+region = Rect2(192, 192, 64, 96)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_2owaj"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_hmido"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7bw4v")
+"texture": SubResource("AtlasTexture_hwv4e")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qpo0i")
+"texture": SubResource("AtlasTexture_yi4uy")
 }],
 "loop": true,
 "name": &"default",
@@ -40,15 +40,17 @@ height = 112.0
 size = Vector2(124, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ev3w5"]
-size = Vector2(389, 127)
+size = Vector2(133, 127)
 
 [node name="BaseNPC" type="CharacterBody2D" unique_id=635213196]
 collision_layer = 0
 collision_mask = 0
-script = ExtResource("1_foict")
+script = ExtResource("1_0yyb3")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1432168607]
-sprite_frames = SubResource("SpriteFrames_2owaj")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1832188055]
+position = Vector2(4.7683716e-07, 9.536743e-07)
+scale = Vector2(1.2382813, 1.234375)
+sprite_frames = SubResource("SpriteFrames_hmido")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=707675974]
@@ -69,34 +71,36 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area_dialogo" unique_id=1552063193]
-position = Vector2(-2.5, -0.5)
+position = Vector2(1.5, -1)
 shape = SubResource("RectangleShape2D_ev3w5")
 
 [node name="Exclamation" type="Sprite2D" parent="." unique_id=424008784]
 visible = false
-position = Vector2(-1, -101.99999)
-scale = Vector2(0.171875, 0.4296875)
-texture = ExtResource("2_0sfq7")
+position = Vector2(0, -69)
+scale = Vector2(0.9192709, 0.9148435)
+texture = ExtResource("3_3rc3r")
+region_enabled = true
+region_rect = Rect2(0.23686981, 65.078964, 30.10527, 30.921036)
 
 [node name="State_machine" type="Node" parent="." unique_id=205093645 node_paths=PackedStringArray("default_state")]
-script = ExtResource("3_qa10a")
+script = ExtResource("4_c5h2q")
 default_state = NodePath("Idle")
 metadata/_custom_type_script = "uid://brb28eoow43ng"
 
 [node name="Idle" type="Node" parent="State_machine" unique_id=322909523]
-script = ExtResource("4_4vbu1")
+script = ExtResource("5_s8f14")
 
 [node name="Talk" type="Node" parent="State_machine" unique_id=537215656]
-script = ExtResource("5_v67jg")
+script = ExtResource("6_uuj41")
 
 [node name="Knockback" type="Node" parent="State_machine" unique_id=2003794223]
-script = ExtResource("6_0pqk7")
+script = ExtResource("7_7rjj3")
 
 [node name="Scape" type="Node" parent="State_machine" unique_id=36712939]
-script = ExtResource("7_nuxne")
+script = ExtResource("8_rsn3f")
 
 [node name="Dead" type="Node" parent="State_machine" unique_id=900297726]
-script = ExtResource("8_klfa7")
+script = ExtResource("9_f24dg")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]

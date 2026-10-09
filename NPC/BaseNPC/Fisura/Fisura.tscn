@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dbtgkwxhpaapd" path="res://NPC/BaseNPC/Fisura/fisura.gd" id="1_06r8o"]
 [ext_resource type="Texture2D" uid="uid://c5tdhn33e6f5m" path="res://Assets/npcl.png" id="2_h8drj"]
-[ext_resource type="Texture2D" uid="uid://bvv5lt0xfqqo1" path="res://icon.svg" id="2_jff0a"]
+[ext_resource type="Texture2D" uid="uid://pkpn4jov0wru" path="res://Assets/objetos y e.png" id="3_06r8o"]
 [ext_resource type="Script" uid="uid://brb28eoow43ng" path="res://player/States/state_machine.gd" id="3_h8drj"]
 [ext_resource type="Script" uid="uid://c30mlg47ul06f" path="res://NPC/BaseNPC/states/idle.gd" id="4_7274k"]
 [ext_resource type="Script" uid="uid://bo5bgs8dhhgb1" path="res://NPC/BaseNPC/states/talk.gd" id="5_vaf6q"]
@@ -40,7 +40,7 @@ height = 112.0
 size = Vector2(124, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ev3w5"]
-size = Vector2(389, 127)
+size = Vector2(156, 127)
 
 [node name="BaseNPC" type="CharacterBody2D" unique_id=635213196]
 collision_layer = 0
@@ -72,14 +72,16 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area_dialogo" unique_id=1552063193]
-position = Vector2(-2.5, -0.5)
+position = Vector2(1, -0.5)
 shape = SubResource("RectangleShape2D_ev3w5")
 
 [node name="Exclamation" type="Sprite2D" parent="." unique_id=424008784]
 visible = false
-position = Vector2(-1, -101.99999)
-scale = Vector2(0.171875, 0.4296875)
-texture = ExtResource("2_jff0a")
+position = Vector2(3.000001, -86)
+scale = Vector2(0.860131, 0.95677894)
+texture = ExtResource("3_06r8o")
+region_enabled = true
+region_rect = Rect2(0, 64.250305, 31.657898, 31.749695)
 
 [node name="State_machine" type="Node" parent="." unique_id=205093645 node_paths=PackedStringArray("default_state")]
 script = ExtResource("3_h8drj")

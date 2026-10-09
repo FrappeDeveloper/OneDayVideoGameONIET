@@ -4,10 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://cfmterofojwoq" path="res://Assets/fondo ciudad.png" id="1_rwl01"]
 [ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="2_g0c2r"]
 [ext_resource type="PackedScene" uid="uid://dsen8spujrx3b" path="res://NPC/BaseNPC/Fisura/Fisura.tscn" id="3_j0rc6"]
+[ext_resource type="PackedScene" uid="uid://bud1ejk3lb6s4" path="res://NPC/BaseNPC/Loco/Loco.tscn" id="4_yly76"]
 [ext_resource type="PackedScene" uid="uid://ch60okqqddxu3" path="res://objets/weaponds/Bat.tscn" id="4_yty1c"]
-[ext_resource type="PackedScene" uid="uid://blxwrlj70qa6b" path="res://NPC/BaseNPC/bieja/vieja.tscn" id="5_dkdk5"]
+[ext_resource type="PackedScene" uid="uid://blxwrlj70qa6b" path="res://NPC/BaseNPC/vieja/vieja.tscn" id="5_dkdk5"]
 [ext_resource type="PackedScene" uid="uid://dk4ij0ho2b7ja" path="res://NPC/BaseNPC/nena/nena.tscn" id="6_m62g2"]
 [ext_resource type="PackedScene" uid="uid://crj3skk16qfro" path="res://NPC/BaseNPC/emo/emo.tscn" id="7_4ba3h"]
+[ext_resource type="PackedScene" uid="uid://d23fnixip4c73" path="res://NPC/BaseNPC/Nene/nene.tscn" id="9_os6ek"]
+[ext_resource type="PackedScene" uid="uid://bdade0steh535" path="res://NPC/BaseNPC/base_npc.tscn" id="10_fifkf"]
 
 [node name="Mundo" type="Node2D" unique_id=2070645401]
 
@@ -62,7 +65,25 @@ position = Vector2(2178, 233)
 [node name="Marker2D8" type="Marker2D" parent="WayPoints" unique_id=463123604]
 position = Vector2(1734, 238)
 
-[node name="Fisura" parent="." unique_id=635213196 node_paths=PackedStringArray("waypoints") instance=ExtResource("3_j0rc6")]
+[node name="Marker2D9" type="Marker2D" parent="WayPoints" unique_id=1692590407]
+position = Vector2(886, 203)
+
+[node name="Marker2D10" type="Marker2D" parent="WayPoints" unique_id=676542272]
+position = Vector2(1098, 204)
+
+[node name="Marker2D11" type="Marker2D" parent="WayPoints" unique_id=415262460]
+position = Vector2(2129, 220)
+
+[node name="Marker2D12" type="Marker2D" parent="WayPoints" unique_id=595435395]
+position = Vector2(2470, 228)
+
+[node name="Marker2D13" type="Marker2D" parent="WayPoints" unique_id=1506929111]
+position = Vector2(2527, 226)
+
+[node name="Marker2D14" type="Marker2D" parent="WayPoints" unique_id=1997223349]
+position = Vector2(3189, 229)
+
+[node name="Fisura" parent="." unique_id=1812433625 node_paths=PackedStringArray("waypoints") instance=ExtResource("3_j0rc6")]
 position = Vector2(-758, 263)
 scale = Vector2(0.6, 0.64)
 waypoints = [NodePath("../WayPoints/Marker2D"), NodePath("../WayPoints/Marker2D2")]
@@ -75,7 +96,7 @@ position = Vector2(-425, 283)
 position = Vector2(217, 227)
 live = 15.0
 waypoints = [NodePath("../WayPoints/Marker2D3"), NodePath("../WayPoints/Marker2D4")]
-speed = 100.0
+speed = 50.0
 
 [node name="Nena" parent="." unique_id=1944027967 node_paths=PackedStringArray("waypoints") instance=ExtResource("6_m62g2")]
 position = Vector2(1170, 238)
@@ -85,6 +106,27 @@ speed = 100.0
 
 [node name="emo" parent="." unique_id=1761974071 node_paths=PackedStringArray("waypoints") instance=ExtResource("7_4ba3h")]
 position = Vector2(1882, 229)
+live = 15.0
 waypoints = [NodePath("../WayPoints/Marker2D7"), NodePath("../WayPoints/Marker2D8")]
+speed = 100.0
+
+[node name="Nene" parent="." unique_id=1426329870 node_paths=PackedStringArray("waypoints") instance=ExtResource("9_os6ek")]
+position = Vector2(889, 203)
+live = 10.0
+waypoints = [NodePath("../WayPoints/Marker2D9"), NodePath("../WayPoints/Marker2D10")]
+speed = 100.0
+
+[node name="Poli" parent="." unique_id=1466712671 node_paths=PackedStringArray("waypoints") instance=ExtResource("10_fifkf")]
+position = Vector2(2180, 221)
+scale = Vector2(0.57320005, 0.79310447)
+live = 25.0
+waypoints = [NodePath("../WayPoints/Marker2D11"), NodePath("../WayPoints/Marker2D12")]
+speed = 130.0
+
+[node name="Loco" parent="." unique_id=635213196 node_paths=PackedStringArray("waypoints") instance=ExtResource("4_yly76")]
+position = Vector2(2620, 221)
+live = 15.0
+waypoints = [NodePath("../WayPoints/Marker2D13"), NodePath("../WayPoints/Marker2D14")]
+speed = 70.0
 
 [connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]
