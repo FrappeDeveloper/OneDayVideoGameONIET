@@ -232,4 +232,7 @@ script = ExtResource("4_aqcbf")
 [node name="Fall" type="Node" parent="State_machine" unique_id=941203635]
 script = ExtResource("5_gskgj")
 
+[node name="Timer" type="Timer" parent="." unique_id=896027708]
+wait_time = 3.0
+
 [connection signal="area_entered" from="sprite/attack_box" to="." method="_on_attack_box_area_entered"]

@@ -93,6 +93,7 @@ script = ExtResource("7_nuxne")
 script = ExtResource("8_klfa7")
 
 [node name="Exclamation" type="Sprite2D" parent="." unique_id=170239278]
+visible = false
 position = Vector2(0, -50)
 scale = Vector2(0.53421336, 0.6341987)
 texture = ExtResource("9_bjvq6")

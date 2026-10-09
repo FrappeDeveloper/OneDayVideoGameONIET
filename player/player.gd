@@ -12,7 +12,8 @@ const gravity = 1000.0
 
 var direction=Vector2.ZERO
 
-var timer:Timer
+@onready var timer: Timer = $Timer
+
 
 var bullet=preload("res://objets/weaponds/bullet.tscn").instantiate()
 

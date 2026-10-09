@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cfmterofojwoq" path="res://Assets/fondo ciudad.png" id="1_rwl01"]
 [ext_resource type="PackedScene" uid="uid://bseg28ecfep3q" path="res://player/Player.tscn" id="2_g0c2r"]
 [ext_resource type="PackedScene" uid="uid://dsen8spujrx3b" path="res://NPC/BaseNPC/Fisura/Fisura.tscn" id="3_j0rc6"]
+[ext_resource type="PackedScene" uid="uid://by2dyfnyix528" path="res://objets/weaponds/Gun.tscn" id="4_0v0oe"]
 [ext_resource type="PackedScene" uid="uid://bud1ejk3lb6s4" path="res://NPC/BaseNPC/Loco/Loco.tscn" id="4_yly76"]
 [ext_resource type="PackedScene" uid="uid://ch60okqqddxu3" path="res://objets/weaponds/Bat.tscn" id="4_yty1c"]
 [ext_resource type="PackedScene" uid="uid://blxwrlj70qa6b" path="res://NPC/BaseNPC/vieja/vieja.tscn" id="5_dkdk5"]
@@ -19,7 +20,7 @@ wait_time = 60.0
 autostart = true
 
 [node name="FondoCiudad" type="Sprite2D" parent="." unique_id=631884704]
-position = Vector2(2376, -225)
+position = Vector2(2267, -72)
 texture = ExtResource("1_rwl01")
 
 [node name="FondoCiudad2" type="Sprite2D" parent="." unique_id=711449648]
@@ -27,7 +28,7 @@ position = Vector2(-113, -232)
 texture = ExtResource("1_rwl01")
 
 [node name="FondoCiudad3" type="Sprite2D" parent="." unique_id=1101680648]
-position = Vector2(-113, -232)
+position = Vector2(-55, -67)
 texture = ExtResource("1_rwl01")
 
 [node name="Ciudad" parent="." unique_id=174053674 instance=ExtResource("1_6uj53")]
@@ -83,14 +84,17 @@ position = Vector2(2527, 226)
 [node name="Marker2D14" type="Marker2D" parent="WayPoints" unique_id=1997223349]
 position = Vector2(3189, 229)
 
+[node name="Gun" parent="WayPoints" unique_id=702910082 instance=ExtResource("4_0v0oe")]
+position = Vector2(-276, 285)
+
 [node name="Fisura" parent="." unique_id=1812433625 node_paths=PackedStringArray("waypoints") instance=ExtResource("3_j0rc6")]
 position = Vector2(-758, 263)
 scale = Vector2(0.6, 0.64)
 waypoints = [NodePath("../WayPoints/Marker2D"), NodePath("../WayPoints/Marker2D2")]
 speed = 100.0
 
-[node name="Bat" parent="." unique_id=702910082 instance=ExtResource("4_yty1c")]
-position = Vector2(-425, 283)
+[node name="Bat" parent="." unique_id=1113576423 instance=ExtResource("4_yty1c")]
+position = Vector2(-310, 271)
 
 [node name="Vieja" parent="." unique_id=1821238118 node_paths=PackedStringArray("waypoints") instance=ExtResource("5_dkdk5")]
 position = Vector2(217, 227)
